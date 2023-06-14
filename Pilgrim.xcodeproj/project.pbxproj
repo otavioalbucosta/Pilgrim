@@ -1,0 +1,1021 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D15E02A39F67D002739CB /* PilgrimApp.swift */; };
+		4F7D15E32A39F67D002739CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D15E22A39F67D002739CB /* ContentView.swift */; };
+		4F7D15E52A39F67E002739CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D15E42A39F67E002739CB /* Assets.xcassets */; };
+		4F7D15E82A39F67E002739CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D15E72A39F67E002739CB /* Preview Assets.xcassets */; };
+		4F7D15F22A39F67E002739CB /* PilgrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D15F12A39F67E002739CB /* PilgrimTests.swift */; };
+		4F7D15FC2A39F67E002739CB /* PilgrimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D15FB2A39F67E002739CB /* PilgrimUITests.swift */; };
+		4F7D15FE2A39F67E002739CB /* PilgrimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D15FD2A39F67E002739CB /* PilgrimUITestsLaunchTests.swift */; };
+		4F7D16042A39F67E002739CB /* Pilgrim Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4F7D16032A39F67E002739CB /* Pilgrim Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4F7D16092A39F67E002739CB /* PilgrimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16082A39F67E002739CB /* PilgrimApp.swift */; };
+		4F7D160B2A39F67E002739CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D160A2A39F67E002739CB /* ContentView.swift */; };
+		4F7D160D2A39F67F002739CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D160C2A39F67F002739CB /* Assets.xcassets */; };
+		4F7D16102A39F67F002739CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D160F2A39F67F002739CB /* Preview Assets.xcassets */; };
+		4F7D161A2A39F67F002739CB /* Pilgrim_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16192A39F67F002739CB /* Pilgrim_Watch_AppTests.swift */; };
+		4F7D16242A39F67F002739CB /* Pilgrim_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16232A39F67F002739CB /* Pilgrim_Watch_AppUITests.swift */; };
+		4F7D16262A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16252A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F7D15EE2A39F67E002739CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F7D15D52A39F67D002739CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7D15DC2A39F67D002739CB;
+			remoteInfo = Pilgrim;
+		};
+		4F7D15F82A39F67E002739CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F7D15D52A39F67D002739CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7D15DC2A39F67D002739CB;
+			remoteInfo = Pilgrim;
+		};
+		4F7D16052A39F67E002739CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F7D15D52A39F67D002739CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7D16022A39F67E002739CB;
+			remoteInfo = "Pilgrim Watch App";
+		};
+		4F7D16162A39F67F002739CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F7D15D52A39F67D002739CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7D16022A39F67E002739CB;
+			remoteInfo = "Pilgrim Watch App";
+		};
+		4F7D16202A39F67F002739CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F7D15D52A39F67D002739CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7D16022A39F67E002739CB;
+			remoteInfo = "Pilgrim Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F7D162C2A39F67F002739CB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4F7D16042A39F67E002739CB /* Pilgrim Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4F7D15DD2A39F67D002739CB /* Pilgrim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pilgrim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7D15E02A39F67D002739CB /* PilgrimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilgrimApp.swift; sourceTree = "<group>"; };
+		4F7D15E22A39F67D002739CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F7D15E42A39F67E002739CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F7D15E72A39F67E002739CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F7D15ED2A39F67E002739CB /* PilgrimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PilgrimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7D15F12A39F67E002739CB /* PilgrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilgrimTests.swift; sourceTree = "<group>"; };
+		4F7D15F72A39F67E002739CB /* PilgrimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PilgrimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7D15FB2A39F67E002739CB /* PilgrimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilgrimUITests.swift; sourceTree = "<group>"; };
+		4F7D15FD2A39F67E002739CB /* PilgrimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilgrimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F7D16032A39F67E002739CB /* Pilgrim Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pilgrim Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7D16082A39F67E002739CB /* PilgrimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilgrimApp.swift; sourceTree = "<group>"; };
+		4F7D160A2A39F67E002739CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F7D160C2A39F67F002739CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F7D160F2A39F67F002739CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F7D16152A39F67F002739CB /* Pilgrim Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pilgrim Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7D16192A39F67F002739CB /* Pilgrim_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilgrim_Watch_AppTests.swift; sourceTree = "<group>"; };
+		4F7D161F2A39F67F002739CB /* Pilgrim Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pilgrim Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7D16232A39F67F002739CB /* Pilgrim_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilgrim_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		4F7D16252A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilgrim_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F7D15DA2A39F67D002739CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D15EA2A39F67E002739CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D15F42A39F67E002739CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D16002A39F67E002739CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D16122A39F67F002739CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D161C2A39F67F002739CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F7D15D42A39F67D002739CB = {
+			isa = PBXGroup;
+			children = (
+				4F7D15DF2A39F67D002739CB /* Pilgrim */,
+				4F7D15F02A39F67E002739CB /* PilgrimTests */,
+				4F7D15FA2A39F67E002739CB /* PilgrimUITests */,
+				4F7D16072A39F67E002739CB /* Pilgrim Watch App */,
+				4F7D16182A39F67F002739CB /* Pilgrim Watch AppTests */,
+				4F7D16222A39F67F002739CB /* Pilgrim Watch AppUITests */,
+				4F7D15DE2A39F67D002739CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F7D15DE2A39F67D002739CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D15DD2A39F67D002739CB /* Pilgrim.app */,
+				4F7D15ED2A39F67E002739CB /* PilgrimTests.xctest */,
+				4F7D15F72A39F67E002739CB /* PilgrimUITests.xctest */,
+				4F7D16032A39F67E002739CB /* Pilgrim Watch App.app */,
+				4F7D16152A39F67F002739CB /* Pilgrim Watch AppTests.xctest */,
+				4F7D161F2A39F67F002739CB /* Pilgrim Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F7D15DF2A39F67D002739CB /* Pilgrim */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D15E02A39F67D002739CB /* PilgrimApp.swift */,
+				4F7D15E22A39F67D002739CB /* ContentView.swift */,
+				4F7D15E42A39F67E002739CB /* Assets.xcassets */,
+				4F7D15E62A39F67E002739CB /* Preview Content */,
+			);
+			path = Pilgrim;
+			sourceTree = "<group>";
+		};
+		4F7D15E62A39F67E002739CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D15E72A39F67E002739CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F7D15F02A39F67E002739CB /* PilgrimTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D15F12A39F67E002739CB /* PilgrimTests.swift */,
+			);
+			path = PilgrimTests;
+			sourceTree = "<group>";
+		};
+		4F7D15FA2A39F67E002739CB /* PilgrimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D15FB2A39F67E002739CB /* PilgrimUITests.swift */,
+				4F7D15FD2A39F67E002739CB /* PilgrimUITestsLaunchTests.swift */,
+			);
+			path = PilgrimUITests;
+			sourceTree = "<group>";
+		};
+		4F7D16072A39F67E002739CB /* Pilgrim Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D16082A39F67E002739CB /* PilgrimApp.swift */,
+				4F7D160A2A39F67E002739CB /* ContentView.swift */,
+				4F7D160C2A39F67F002739CB /* Assets.xcassets */,
+				4F7D160E2A39F67F002739CB /* Preview Content */,
+			);
+			path = "Pilgrim Watch App";
+			sourceTree = "<group>";
+		};
+		4F7D160E2A39F67F002739CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D160F2A39F67F002739CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F7D16182A39F67F002739CB /* Pilgrim Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D16192A39F67F002739CB /* Pilgrim_Watch_AppTests.swift */,
+			);
+			path = "Pilgrim Watch AppTests";
+			sourceTree = "<group>";
+		};
+		4F7D16222A39F67F002739CB /* Pilgrim Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D16232A39F67F002739CB /* Pilgrim_Watch_AppUITests.swift */,
+				4F7D16252A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Pilgrim Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F7D15DC2A39F67D002739CB /* Pilgrim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7D162D2A39F67F002739CB /* Build configuration list for PBXNativeTarget "Pilgrim" */;
+			buildPhases = (
+				4F7D15D92A39F67D002739CB /* Sources */,
+				4F7D15DA2A39F67D002739CB /* Frameworks */,
+				4F7D15DB2A39F67D002739CB /* Resources */,
+				4F7D162C2A39F67F002739CB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F7D16062A39F67E002739CB /* PBXTargetDependency */,
+			);
+			name = Pilgrim;
+			productName = Pilgrim;
+			productReference = 4F7D15DD2A39F67D002739CB /* Pilgrim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F7D15EC2A39F67E002739CB /* PilgrimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7D16302A39F67F002739CB /* Build configuration list for PBXNativeTarget "PilgrimTests" */;
+			buildPhases = (
+				4F7D15E92A39F67E002739CB /* Sources */,
+				4F7D15EA2A39F67E002739CB /* Frameworks */,
+				4F7D15EB2A39F67E002739CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F7D15EF2A39F67E002739CB /* PBXTargetDependency */,
+			);
+			name = PilgrimTests;
+			productName = PilgrimTests;
+			productReference = 4F7D15ED2A39F67E002739CB /* PilgrimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F7D15F62A39F67E002739CB /* PilgrimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7D16332A39F67F002739CB /* Build configuration list for PBXNativeTarget "PilgrimUITests" */;
+			buildPhases = (
+				4F7D15F32A39F67E002739CB /* Sources */,
+				4F7D15F42A39F67E002739CB /* Frameworks */,
+				4F7D15F52A39F67E002739CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F7D15F92A39F67E002739CB /* PBXTargetDependency */,
+			);
+			name = PilgrimUITests;
+			productName = PilgrimUITests;
+			productReference = 4F7D15F72A39F67E002739CB /* PilgrimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4F7D16022A39F67E002739CB /* Pilgrim Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7D16292A39F67F002739CB /* Build configuration list for PBXNativeTarget "Pilgrim Watch App" */;
+			buildPhases = (
+				4F7D15FF2A39F67E002739CB /* Sources */,
+				4F7D16002A39F67E002739CB /* Frameworks */,
+				4F7D16012A39F67E002739CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pilgrim Watch App";
+			productName = "Pilgrim Watch App";
+			productReference = 4F7D16032A39F67E002739CB /* Pilgrim Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F7D16142A39F67F002739CB /* Pilgrim Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7D16362A39F67F002739CB /* Build configuration list for PBXNativeTarget "Pilgrim Watch AppTests" */;
+			buildPhases = (
+				4F7D16112A39F67F002739CB /* Sources */,
+				4F7D16122A39F67F002739CB /* Frameworks */,
+				4F7D16132A39F67F002739CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F7D16172A39F67F002739CB /* PBXTargetDependency */,
+			);
+			name = "Pilgrim Watch AppTests";
+			productName = "Pilgrim Watch AppTests";
+			productReference = 4F7D16152A39F67F002739CB /* Pilgrim Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F7D161E2A39F67F002739CB /* Pilgrim Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7D16392A39F67F002739CB /* Build configuration list for PBXNativeTarget "Pilgrim Watch AppUITests" */;
+			buildPhases = (
+				4F7D161B2A39F67F002739CB /* Sources */,
+				4F7D161C2A39F67F002739CB /* Frameworks */,
+				4F7D161D2A39F67F002739CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F7D16212A39F67F002739CB /* PBXTargetDependency */,
+			);
+			name = "Pilgrim Watch AppUITests";
+			productName = "Pilgrim Watch AppUITests";
+			productReference = 4F7D161F2A39F67F002739CB /* Pilgrim Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F7D15D52A39F67D002739CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4F7D15DC2A39F67D002739CB = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					4F7D15EC2A39F67E002739CB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 4F7D15DC2A39F67D002739CB;
+					};
+					4F7D15F62A39F67E002739CB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 4F7D15DC2A39F67D002739CB;
+					};
+					4F7D16022A39F67E002739CB = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					4F7D16142A39F67F002739CB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 4F7D16022A39F67E002739CB;
+					};
+					4F7D161E2A39F67F002739CB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 4F7D16022A39F67E002739CB;
+					};
+				};
+			};
+			buildConfigurationList = 4F7D15D82A39F67D002739CB /* Build configuration list for PBXProject "Pilgrim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F7D15D42A39F67D002739CB;
+			productRefGroup = 4F7D15DE2A39F67D002739CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F7D15DC2A39F67D002739CB /* Pilgrim */,
+				4F7D15EC2A39F67E002739CB /* PilgrimTests */,
+				4F7D15F62A39F67E002739CB /* PilgrimUITests */,
+				4F7D16022A39F67E002739CB /* Pilgrim Watch App */,
+				4F7D16142A39F67F002739CB /* Pilgrim Watch AppTests */,
+				4F7D161E2A39F67F002739CB /* Pilgrim Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F7D15DB2A39F67D002739CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7D15E82A39F67E002739CB /* Preview Assets.xcassets in Resources */,
+				4F7D15E52A39F67E002739CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D15EB2A39F67E002739CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D15F52A39F67E002739CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D16012A39F67E002739CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7D16102A39F67F002739CB /* Preview Assets.xcassets in Resources */,
+				4F7D160D2A39F67F002739CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D16132A39F67F002739CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D161D2A39F67F002739CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F7D15D92A39F67D002739CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7D15E32A39F67D002739CB /* ContentView.swift in Sources */,
+				4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D15E92A39F67E002739CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7D15F22A39F67E002739CB /* PilgrimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D15F32A39F67E002739CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7D15FC2A39F67E002739CB /* PilgrimUITests.swift in Sources */,
+				4F7D15FE2A39F67E002739CB /* PilgrimUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D15FF2A39F67E002739CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7D160B2A39F67E002739CB /* ContentView.swift in Sources */,
+				4F7D16092A39F67E002739CB /* PilgrimApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D16112A39F67F002739CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7D161A2A39F67F002739CB /* Pilgrim_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7D161B2A39F67F002739CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7D16242A39F67F002739CB /* Pilgrim_Watch_AppUITests.swift in Sources */,
+				4F7D16262A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F7D15EF2A39F67E002739CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F7D15DC2A39F67D002739CB /* Pilgrim */;
+			targetProxy = 4F7D15EE2A39F67E002739CB /* PBXContainerItemProxy */;
+		};
+		4F7D15F92A39F67E002739CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F7D15DC2A39F67D002739CB /* Pilgrim */;
+			targetProxy = 4F7D15F82A39F67E002739CB /* PBXContainerItemProxy */;
+		};
+		4F7D16062A39F67E002739CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F7D16022A39F67E002739CB /* Pilgrim Watch App */;
+			targetProxy = 4F7D16052A39F67E002739CB /* PBXContainerItemProxy */;
+		};
+		4F7D16172A39F67F002739CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F7D16022A39F67E002739CB /* Pilgrim Watch App */;
+			targetProxy = 4F7D16162A39F67F002739CB /* PBXContainerItemProxy */;
+		};
+		4F7D16212A39F67F002739CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F7D16022A39F67E002739CB /* Pilgrim Watch App */;
+			targetProxy = 4F7D16202A39F67F002739CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F7D16272A39F67F002739CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F7D16282A39F67F002739CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4F7D162A2A39F67F002739CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = progamming.Pilgrim;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = progamming.Pilgrim.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		4F7D162B2A39F67F002739CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = progamming.Pilgrim;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = progamming.Pilgrim.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		4F7D162E2A39F67F002739CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = progamming.Pilgrim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F7D162F2A39F67F002739CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = progamming.Pilgrim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F7D16312A39F67F002739CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = progamming.PilgrimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pilgrim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pilgrim";
+			};
+			name = Debug;
+		};
+		4F7D16322A39F67F002739CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = progamming.PilgrimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pilgrim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pilgrim";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F7D16342A39F67F002739CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = progamming.PilgrimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pilgrim;
+			};
+			name = Debug;
+		};
+		4F7D16352A39F67F002739CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = progamming.PilgrimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pilgrim;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F7D16372A39F67F002739CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "progamming.Pilgrim-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pilgrim Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pilgrim Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		4F7D16382A39F67F002739CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "progamming.Pilgrim-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pilgrim Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pilgrim Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		4F7D163A2A39F67F002739CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "progamming.Pilgrim-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Pilgrim Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		4F7D163B2A39F67F002739CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "progamming.Pilgrim-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Pilgrim Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F7D15D82A39F67D002739CB /* Build configuration list for PBXProject "Pilgrim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7D16272A39F67F002739CB /* Debug */,
+				4F7D16282A39F67F002739CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7D16292A39F67F002739CB /* Build configuration list for PBXNativeTarget "Pilgrim Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7D162A2A39F67F002739CB /* Debug */,
+				4F7D162B2A39F67F002739CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7D162D2A39F67F002739CB /* Build configuration list for PBXNativeTarget "Pilgrim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7D162E2A39F67F002739CB /* Debug */,
+				4F7D162F2A39F67F002739CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7D16302A39F67F002739CB /* Build configuration list for PBXNativeTarget "PilgrimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7D16312A39F67F002739CB /* Debug */,
+				4F7D16322A39F67F002739CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7D16332A39F67F002739CB /* Build configuration list for PBXNativeTarget "PilgrimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7D16342A39F67F002739CB /* Debug */,
+				4F7D16352A39F67F002739CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7D16362A39F67F002739CB /* Build configuration list for PBXNativeTarget "Pilgrim Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7D16372A39F67F002739CB /* Debug */,
+				4F7D16382A39F67F002739CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7D16392A39F67F002739CB /* Build configuration list for PBXNativeTarget "Pilgrim Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7D163A2A39F67F002739CB /* Debug */,
+				4F7D163B2A39F67F002739CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F7D15D52A39F67D002739CB /* Project object */;
+}
