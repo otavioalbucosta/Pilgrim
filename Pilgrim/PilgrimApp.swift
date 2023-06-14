@@ -11,7 +11,7 @@ import SwiftUI
 struct PilgrimApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TinderView()
         }
     }
 }
