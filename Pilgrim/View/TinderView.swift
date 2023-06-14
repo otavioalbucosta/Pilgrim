@@ -9,8 +9,7 @@ import SwiftUI
 
 struct TinderView: View {
 
-    @State var mockModels: [LocalElement] = []
-    @State var visualMockModels: [LocalElement] = []
+    @StateObject var viewmodel = TinderViewmodel()
 
     var body: some View {
         ZStack {
@@ -29,14 +28,23 @@ struct TinderView: View {
                     .offset(CGSize(width: 10, height: 0))
             }
 
-            ForEach(mockModels.reversed(), id: \.hashValue) { model in
-                CardView(localName: model.local ?? "Ainda nao adicioando", url: URL(string: model.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg "))
+//            ForEach(viewmodel.locals.reversed(), id: \.hashValue) { model in
+//                CardView(localName: model.local ?? "Ainda nao adicioando", url: URL(string: model.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg "))
+//            }
+            CardView(
+                localName: viewmodel.currentLocal.local ?? "Não Encontrado",
+                url: URL(string: viewmodel.currentLocal.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg")
+            ) {
+                viewmodel.passLocal()
+            } remove: {
+                viewmodel.returnLocal()
             }
 
         }
         .onAppear {
-            mockModels = ReadJson.instance.loadjson()
-            print(mockModels)
+            Task {
+                viewmodel.fetchLocals()
+            }
         }
     }
 }

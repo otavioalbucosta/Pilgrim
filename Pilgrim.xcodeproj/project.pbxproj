@@ -27,6 +27,7 @@
 		4F7D16412A39FD87002739CB /* SemiCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16402A39FD87002739CB /* SemiCircle.swift */; };
 		4F7D16432A39FDC1002739CB /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16422A39FDC1002739CB /* JSONReader.swift */; };
 		4F7D16452A39FED5002739CB /* LocalsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D16442A39FE0B002739CB /* LocalsJSON.json */; };
+		B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905B38D2A3A04B70043311E /* TinderViewmodel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		4F7D16402A39FD87002739CB /* SemiCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiCircle.swift; sourceTree = "<group>"; };
 		4F7D16422A39FDC1002739CB /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		4F7D16442A39FE0B002739CB /* LocalsJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LocalsJSON.json; sourceTree = "<group>"; };
+		B905B38D2A3A04B70043311E /* TinderViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewmodel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,13 +186,12 @@
 		4F7D15DF2A39F67D002739CB /* Pilgrim */ = {
 			isa = PBXGroup;
 			children = (
+				B905B38C2A3A04980043311E /* Util */,
+				B905B38B2A3A04810043311E /* Model */,
+				B905B38A2A3A047B0043311E /* Viewmodel */,
+				B905B3892A3A044F0043311E /* View */,
 				4F7D15E02A39F67D002739CB /* PilgrimApp.swift */,
-				4F7D15E22A39F67D002739CB /* CardView.swift */,
-				4F7D16402A39FD87002739CB /* SemiCircle.swift */,
-				4F7D163C2A39FD02002739CB /* TinderView.swift */,
-				4F7D16422A39FDC1002739CB /* JSONReader.swift */,
 				4F7D16442A39FE0B002739CB /* LocalsJSON.json */,
-				4F7D163E2A39FD5E002739CB /* LocalModel.swift */,
 				4F7D15E42A39F67E002739CB /* Assets.xcassets */,
 				4F7D15E62A39F67E002739CB /* Preview Content */,
 			);
@@ -256,6 +257,40 @@
 				4F7D16252A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift */,
 			);
 			path = "Pilgrim Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		B905B3892A3A044F0043311E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D163C2A39FD02002739CB /* TinderView.swift */,
+				4F7D16402A39FD87002739CB /* SemiCircle.swift */,
+				4F7D15E22A39F67D002739CB /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B905B38A2A3A047B0043311E /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B905B38D2A3A04B70043311E /* TinderViewmodel.swift */,
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		B905B38B2A3A04810043311E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D163E2A39FD5E002739CB /* LocalModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B905B38C2A3A04980043311E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D16422A39FDC1002739CB /* JSONReader.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,6 +521,7 @@
 				4F7D15E32A39F67D002739CB /* CardView.swift in Sources */,
 				4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */,
 				4F7D16432A39FDC1002739CB /* JSONReader.swift in Sources */,
+				B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */,
 				4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
