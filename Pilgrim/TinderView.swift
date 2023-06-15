@@ -30,13 +30,24 @@ struct TinderView: View {
             }
 
             ForEach(mockModels.reversed(), id: \.hashValue) { model in
-                CardView(localName: model.local ?? "Ainda nao adicioando", url: URL(string: model.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg "))
+                CardView(localName: model.local ?? "Ainda nao adicioando", localEstado: model.state.rawValue, url: URL(string: model.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg ")) {
+                    print(model.correct ? "Acertou" : "Errou")
+                } wrongChoice: {
+                    print(model.correct ? "Errou" : "Acertou")
+                }
             }
 
         }
         .onAppear {
-            mockModels = ReadJson.instance.loadjson()
-            print(mockModels)
+            let allCorrectCards = ReadJson.instance.loadjson().shuffled()
+            let percentage = 0.5
+            let wrongCardsAmount = Int(Double(allCorrectCards.count) * percentage)
+            let cardsToMakeWrong = allCorrectCards.prefix(wrongCardsAmount)
+            let correctCards = allCorrectCards.suffix(allCorrectCards.count - wrongCardsAmount)
+            let wrongCards = cardsToMakeWrong.map {
+                LocalElement(region: $0.region, state: AllStates.randomElement()!, local: $0.local, imageURL: $0.imageURL, localDescription: $0.localDescription, correct: false)
+            }
+            mockModels = (wrongCards + correctCards).shuffled()
         }
     }
 }
