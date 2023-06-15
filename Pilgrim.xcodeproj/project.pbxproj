@@ -27,6 +27,7 @@
 		4F7D16412A39FD87002739CB /* SemiCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16402A39FD87002739CB /* SemiCircle.swift */; };
 		4F7D16432A39FDC1002739CB /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16422A39FDC1002739CB /* JSONReader.swift */; };
 		4F7D16452A39FED5002739CB /* LocalsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D16442A39FE0B002739CB /* LocalsJSON.json */; };
+		4FDF258C2A3B308F00933466 /* AllStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF258B2A3B308F00933466 /* AllStates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		4F7D16402A39FD87002739CB /* SemiCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiCircle.swift; sourceTree = "<group>"; };
 		4F7D16422A39FDC1002739CB /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		4F7D16442A39FE0B002739CB /* LocalsJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LocalsJSON.json; sourceTree = "<group>"; };
+		4FDF258B2A3B308F00933466 /* AllStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			children = (
 				4F7D15E02A39F67D002739CB /* PilgrimApp.swift */,
 				4F7D15E22A39F67D002739CB /* CardView.swift */,
+				4FDF258B2A3B308F00933466 /* AllStates.swift */,
 				4F7D16402A39FD87002739CB /* SemiCircle.swift */,
 				4F7D163C2A39FD02002739CB /* TinderView.swift */,
 				4F7D16422A39FDC1002739CB /* JSONReader.swift */,
@@ -481,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FDF258C2A3B308F00933466 /* AllStates.swift in Sources */,
 				4F7D16412A39FD87002739CB /* SemiCircle.swift in Sources */,
 				4F7D163D2A39FD02002739CB /* TinderView.swift in Sources */,
 				4F7D15E32A39F67D002739CB /* CardView.swift in Sources */,
