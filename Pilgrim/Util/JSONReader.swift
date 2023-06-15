@@ -25,6 +25,6 @@ class ReadJson {
             }
         }
 
-        return [LocalElement(region: .nordeste, state: "CE", local: "Jeri", imageURL: nil, localDescription: nil)]
+        return [LocalElement(region: .nordeste, state: .ce, local: nil, imageURL: nil, localDescription: nil)]
     }
 }
