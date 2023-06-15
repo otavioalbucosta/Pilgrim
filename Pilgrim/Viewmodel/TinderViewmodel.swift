@@ -11,6 +11,11 @@ class TinderViewmodel: ObservableObject {
     @Published var locals: [LocalElement] = []
     @Published var localIndex = 0
     @Published var currentLocal: LocalElement = LocalElement(region: Region.nordeste, state: .ce, local: "", imageURL: "", localDescription: "")
+    @Published var cardsQueue: [LocalElement] = []
+
+    init() {
+        getShuffleData()
+    }
 
     func fetchLocals() {
         let getLocals = ReadJson.instance.loadjson()
@@ -28,7 +33,17 @@ class TinderViewmodel: ObservableObject {
             LocalElement(region: $0.region, state: AllStates.randomElement()!, local: $0.local, imageURL: $0.imageURL, localDescription: $0.localDescription, correct: false)
         }
         locals = (wrongCards + correctCards).shuffled()
+        cardsQueue = Array(locals.suffix(3))
+        localIndex = locals.count - 3
         currentLocal = locals.first!
+    }
+
+    func popCard() {
+        cardsQueue.removeFirst()
+        if localIndex >= 0 {
+            cardsQueue.append(locals[localIndex])
+            localIndex -= 1
+        }
     }
 
     func passLocal() {
