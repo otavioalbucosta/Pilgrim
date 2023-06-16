@@ -27,7 +27,11 @@ struct TinderView: View {
                     .opacity(0.7)
                     .offset(CGSize(width: 10, height: 0))
             }
-
+            CardView(
+                localName: viewmodel.cardsQueue[1].local ?? "Não Encontrado",
+                localEstado: viewmodel.cardsQueue[1].state.rawValue,
+                url: URL(string: viewmodel.cardsQueue[1].imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg")
+            )
             CardView(
                 localName: viewmodel.cardsQueue[0].local ?? "Não Encontrado",
                 localEstado: viewmodel.cardsQueue[0].state.rawValue,
@@ -37,6 +41,7 @@ struct TinderView: View {
             } wrongChoice: {
                 viewmodel.popCard()
             }
+
         }
     }
 }
