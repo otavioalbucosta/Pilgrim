@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TinderView: View {
 
@@ -13,6 +14,7 @@ struct TinderView: View {
 
     var body: some View {
         ZStack {
+
             HStack {
                 SemiCircle()
                     .frame(width: 50, height: 100)
@@ -42,7 +44,30 @@ struct TinderView: View {
                 viewmodel.popCard()
             }
 
+            VStack {
+                Spacer()
+                RoundedRectangle(cornerRadius: 15)
+                    .fill(.thinMaterial)
+                    .frame(width: 250, height: 40)
+                    .overlay {
+                        Text(viewmodel.cardsQueue[0].state.rawValue)
+                            .font(.system(size: 20, weight: .medium, design: .default))
+                    }
+                    .padding(.bottom, 80)
+            }
+
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background {
+            KFImage(URL(string: viewmodel.cardsQueue[0].imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg"))
+                .resizable()
+                .scaledToFill()
+                .overlay {
+                    Rectangle().fill(.ultraThinMaterial)
+                }
+                .ignoresSafeArea()
+        }
+
     }
 }
 
