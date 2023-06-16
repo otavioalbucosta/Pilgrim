@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D15E02A39F67D002739CB /* PilgrimApp.swift */; };
-		4F7D15E32A39F67D002739CB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D15E22A39F67D002739CB /* CardView.swift */; };
 		4F7D15E52A39F67E002739CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D15E42A39F67E002739CB /* Assets.xcassets */; };
 		4F7D15E82A39F67E002739CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D15E72A39F67E002739CB /* Preview Assets.xcassets */; };
 		4F7D15F22A39F67E002739CB /* PilgrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D15F12A39F67E002739CB /* PilgrimTests.swift */; };
@@ -22,11 +21,15 @@
 		4F7D161A2A39F67F002739CB /* Pilgrim_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16192A39F67F002739CB /* Pilgrim_Watch_AppTests.swift */; };
 		4F7D16242A39F67F002739CB /* Pilgrim_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16232A39F67F002739CB /* Pilgrim_Watch_AppUITests.swift */; };
 		4F7D16262A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16252A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift */; };
-		4F7D163D2A39FD02002739CB /* TinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D163C2A39FD02002739CB /* TinderView.swift */; };
 		4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D163E2A39FD5E002739CB /* LocalModel.swift */; };
-		4F7D16412A39FD87002739CB /* SemiCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16402A39FD87002739CB /* SemiCircle.swift */; };
-		4F7D16432A39FDC1002739CB /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16422A39FDC1002739CB /* JSONReader.swift */; };
 		4F7D16452A39FED5002739CB /* LocalsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D16442A39FE0B002739CB /* LocalsJSON.json */; };
+		4FDF258C2A3B308F00933466 /* AllStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF258B2A3B308F00933466 /* AllStates.swift */; };
+		B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905B38D2A3A04B70043311E /* TinderViewmodel.swift */; };
+		B98FD35A2A3B4C9D00AED766 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD3592A3B4C9D00AED766 /* CardView.swift */; };
+		B98FD35D2A3B4CAF00AED766 /* SemiCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD35B2A3B4CAF00AED766 /* SemiCircle.swift */; };
+		B98FD35E2A3B4CAF00AED766 /* TinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD35C2A3B4CAF00AED766 /* TinderView.swift */; };
+		B98FD3602A3B4CBC00AED766 /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */; };
+		B98FD3632A3B5C9E00AED766 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B98FD3622A3B5C9E00AED766 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +87,6 @@
 /* Begin PBXFileReference section */
 		4F7D15DD2A39F67D002739CB /* Pilgrim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pilgrim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7D15E02A39F67D002739CB /* PilgrimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilgrimApp.swift; sourceTree = "<group>"; };
-		4F7D15E22A39F67D002739CB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4F7D15E42A39F67E002739CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F7D15E72A39F67E002739CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4F7D15ED2A39F67E002739CB /* PilgrimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PilgrimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,11 +104,14 @@
 		4F7D161F2A39F67F002739CB /* Pilgrim Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pilgrim Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7D16232A39F67F002739CB /* Pilgrim_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilgrim_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		4F7D16252A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilgrim_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4F7D163C2A39FD02002739CB /* TinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderView.swift; sourceTree = "<group>"; };
 		4F7D163E2A39FD5E002739CB /* LocalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalModel.swift; sourceTree = "<group>"; };
-		4F7D16402A39FD87002739CB /* SemiCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiCircle.swift; sourceTree = "<group>"; };
-		4F7D16422A39FDC1002739CB /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		4F7D16442A39FE0B002739CB /* LocalsJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LocalsJSON.json; sourceTree = "<group>"; };
+		4FDF258B2A3B308F00933466 /* AllStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStates.swift; sourceTree = "<group>"; };
+		B905B38D2A3A04B70043311E /* TinderViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewmodel.swift; sourceTree = "<group>"; };
+		B98FD3592A3B4C9D00AED766 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B98FD35B2A3B4CAF00AED766 /* SemiCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiCircle.swift; sourceTree = "<group>"; };
+		B98FD35C2A3B4CAF00AED766 /* TinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderView.swift; sourceTree = "<group>"; };
+		B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98FD3632A3B5C9E00AED766 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,13 +190,13 @@
 		4F7D15DF2A39F67D002739CB /* Pilgrim */ = {
 			isa = PBXGroup;
 			children = (
+				B905B38C2A3A04980043311E /* Util */,
+				B905B38B2A3A04810043311E /* Model */,
+				B905B38A2A3A047B0043311E /* Viewmodel */,
+				B905B3892A3A044F0043311E /* View */,
 				4F7D15E02A39F67D002739CB /* PilgrimApp.swift */,
-				4F7D15E22A39F67D002739CB /* CardView.swift */,
-				4F7D16402A39FD87002739CB /* SemiCircle.swift */,
-				4F7D163C2A39FD02002739CB /* TinderView.swift */,
-				4F7D16422A39FDC1002739CB /* JSONReader.swift */,
+				4FDF258B2A3B308F00933466 /* AllStates.swift */,
 				4F7D16442A39FE0B002739CB /* LocalsJSON.json */,
-				4F7D163E2A39FD5E002739CB /* LocalModel.swift */,
 				4F7D15E42A39F67E002739CB /* Assets.xcassets */,
 				4F7D15E62A39F67E002739CB /* Preview Content */,
 			);
@@ -258,6 +264,40 @@
 			path = "Pilgrim Watch AppUITests";
 			sourceTree = "<group>";
 		};
+		B905B3892A3A044F0043311E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B98FD35B2A3B4CAF00AED766 /* SemiCircle.swift */,
+				B98FD35C2A3B4CAF00AED766 /* TinderView.swift */,
+				B98FD3592A3B4C9D00AED766 /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B905B38A2A3A047B0043311E /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B905B38D2A3A04B70043311E /* TinderViewmodel.swift */,
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		B905B38B2A3A04810043311E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F7D163E2A39FD5E002739CB /* LocalModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B905B38C2A3A04980043311E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,6 +316,9 @@
 				4F7D16062A39F67E002739CB /* PBXTargetDependency */,
 			);
 			name = Pilgrim;
+			packageProductDependencies = (
+				B98FD3622A3B5C9E00AED766 /* Kingfisher */,
+			);
 			productName = Pilgrim;
 			productReference = 4F7D15DD2A39F67D002739CB /* Pilgrim.app */;
 			productType = "com.apple.product-type.application";
@@ -412,6 +455,9 @@
 				Base,
 			);
 			mainGroup = 4F7D15D42A39F67D002739CB;
+			packageReferences = (
+				B98FD3612A3B5C9E00AED766 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 4F7D15DE2A39F67D002739CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -481,11 +527,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F7D16412A39FD87002739CB /* SemiCircle.swift in Sources */,
-				4F7D163D2A39FD02002739CB /* TinderView.swift in Sources */,
-				4F7D15E32A39F67D002739CB /* CardView.swift in Sources */,
+				B98FD3602A3B4CBC00AED766 /* JSONReader.swift in Sources */,
+				B98FD35D2A3B4CAF00AED766 /* SemiCircle.swift in Sources */,
+				B98FD35E2A3B4CAF00AED766 /* TinderView.swift in Sources */,
+				B98FD35A2A3B4C9D00AED766 /* CardView.swift in Sources */,
+				4FDF258C2A3B308F00933466 /* AllStates.swift in Sources */,
 				4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */,
-				4F7D16432A39FDC1002739CB /* JSONReader.swift in Sources */,
+				B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */,
 				4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,7 +729,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = PPSYB39C6H;
+				DEVELOPMENT_TEAM = 949BRFMFQG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -711,7 +759,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = PPSYB39C6H;
+				DEVELOPMENT_TEAM = 949BRFMFQG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -743,7 +791,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
-				DEVELOPMENT_TEAM = PPSYB39C6H;
+				DEVELOPMENT_TEAM = 949BRFMFQG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -776,7 +824,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
-				DEVELOPMENT_TEAM = PPSYB39C6H;
+				DEVELOPMENT_TEAM = 949BRFMFQG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -1036,6 +1084,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B98FD3612A3B5C9E00AED766 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B98FD3622A3B5C9E00AED766 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B98FD3612A3B5C9E00AED766 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F7D15D52A39F67D002739CB /* Project object */;
 }
