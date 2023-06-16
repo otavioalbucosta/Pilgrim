@@ -23,6 +23,9 @@
 		4F7D16262A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16252A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift */; };
 		4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D163E2A39FD5E002739CB /* LocalModel.swift */; };
 		4F7D16452A39FED5002739CB /* LocalsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D16442A39FE0B002739CB /* LocalsJSON.json */; };
+		4F949EE42A3C8EB000A201D1 /* LocalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D163E2A39FD5E002739CB /* LocalModel.swift */; };
+		4F949EE52A3C8EB800A201D1 /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */; };
+		4F949EE62A3C8F3C00A201D1 /* LocalsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D16442A39FE0B002739CB /* LocalsJSON.json */; };
 		4FDF258C2A3B308F00933466 /* AllStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF258B2A3B308F00933466 /* AllStates.swift */; };
 		B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905B38D2A3A04B70043311E /* TinderViewmodel.swift */; };
 		B98FD35A2A3B4C9D00AED766 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD3592A3B4C9D00AED766 /* CardView.swift */; };
@@ -494,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F7D16102A39F67F002739CB /* Preview Assets.xcassets in Resources */,
+				4F949EE62A3C8F3C00A201D1 /* LocalsJSON.json in Resources */,
 				4F7D160D2A39F67F002739CB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,7 +555,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F949EE52A3C8EB800A201D1 /* JSONReader.swift in Sources */,
 				4F7D160B2A39F67E002739CB /* ContentView.swift in Sources */,
+				4F949EE42A3C8EB000A201D1 /* LocalModel.swift in Sources */,
 				4F7D16092A39F67E002739CB /* PilgrimApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
