@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct FeedView: View {
+    @StateObject var viewmodel = FeedViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack {
+                ForEach(viewmodel.cardsToFeed, id: \.self) { element in
+                    FeedComponentView(placeDescription: element.localDescription!, placeTitle: element.local!, placeLocation: element.region)
+                }
+            }
+        }
     }
 }
 

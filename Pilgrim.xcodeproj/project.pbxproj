@@ -10,6 +10,7 @@
 		2977A2042A3CA1D7001BCC34 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2032A3CA1D7001BCC34 /* FeedView.swift */; };
 		2977A2062A3CA24D001BCC34 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2052A3CA24D001BCC34 /* InitialView.swift */; };
 		2977A2082A3CA2D2001BCC34 /* FeedComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */; };
+		2977A20A2A3CA850001BCC34 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2092A3CA850001BCC34 /* FeedViewModel.swift */; };
 		4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D15E02A39F67D002739CB /* PilgrimApp.swift */; };
 		4F7D15E52A39F67E002739CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D15E42A39F67E002739CB /* Assets.xcassets */; };
 		4F7D15E82A39F67E002739CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D15E72A39F67E002739CB /* Preview Assets.xcassets */; };
@@ -91,6 +92,7 @@
 		2977A2032A3CA1D7001BCC34 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		2977A2052A3CA24D001BCC34 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedComponentView.swift; sourceTree = "<group>"; };
+		2977A2092A3CA850001BCC34 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		4F7D15DD2A39F67D002739CB /* Pilgrim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pilgrim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7D15E02A39F67D002739CB /* PilgrimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilgrimApp.swift; sourceTree = "<group>"; };
 		4F7D15E42A39F67E002739CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				B905B38D2A3A04B70043311E /* TinderViewmodel.swift */,
+				2977A2092A3CA850001BCC34 /* FeedViewModel.swift */,
 			);
 			path = Viewmodel;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 			files = (
 				B98FD3602A3B4CBC00AED766 /* JSONReader.swift in Sources */,
 				2977A2042A3CA1D7001BCC34 /* FeedView.swift in Sources */,
+				2977A20A2A3CA850001BCC34 /* FeedViewModel.swift in Sources */,
 				2977A2082A3CA2D2001BCC34 /* FeedComponentView.swift in Sources */,
 				2977A2062A3CA24D001BCC34 /* InitialView.swift in Sources */,
 				B98FD35D2A3B4CAF00AED766 /* SemiCircle.swift in Sources */,
