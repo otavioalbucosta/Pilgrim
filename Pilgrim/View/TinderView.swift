@@ -36,7 +36,7 @@ struct TinderView: View {
                 viewmodel.popCard()
             } wrongChoice: {
                 viewmodel.popCard()
-            } 
+            }
         }
     }
 }
