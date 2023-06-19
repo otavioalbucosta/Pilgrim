@@ -38,7 +38,6 @@ struct CardView: View {
                                     .foregroundColor(.white)
                                     .padding([.leading, .bottom], 15)
                                     .shadow(color: .black, radius: 2)
-
                                 Spacer()
                             }
                         }
