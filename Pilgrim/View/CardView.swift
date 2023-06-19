@@ -10,7 +10,7 @@ import Kingfisher
 
 struct CardView: View {
 
-    @State private var cardColor: Color = .primary
+    @State private var cardColor: Color = .clear
     @State private var offset: CGSize = .zero
     var localName: String
     var localEstado: String
@@ -21,23 +21,32 @@ struct CardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25)
-                .fill(cardColor)
                 .frame(width: 280, height: 400)
                 .overlay(
-                    VStack {
+                    ZStack {
                         KFImage(url)
                             .resizable()
                             .cornerRadius(25)
-                            .frame(width: 220, height: 300)
+                            .frame(width: 280, height: 440)
                             .scaledToFit()
-                        Text(localEstado)
-                            .font(.title)
-                            .foregroundColor(.purple)
+                            .shadow(radius: 2)
+                        VStack {
+                            Spacer()
+                            HStack {
+                                Text(localName)
+                                    .font(.system(size: 25, weight: .bold, design: .default))
+                                    .foregroundColor(.white)
+                                    .padding([.leading, .bottom], 15)
+                                    .shadow(color: .black, radius: 2)
 
-                        Text(localName)
-                            .font(.title)
-                            .foregroundColor(.purple)
-                    }
+                                Spacer()
+                            }
+                        }
+                    }.overlay(
+                        cardColor
+                            .cornerRadius(25)
+                            .opacity(0.5)
+                    )
                 )
                 .offset(offset)
                 .rotationEffect(.degrees(Double(offset.width / 40)))
@@ -50,11 +59,10 @@ struct CardView: View {
                             }
                         }
                         .onEnded { _ in
-                            withAnimation {
+                            withAnimation(.easeIn) {
                                 swipeCard(width: offset.width)
                                 changeColor(width: offset.width)
                             }
-                            offset = .zero
                             changeColor(width: offset.width)
                         }
                 )
@@ -83,7 +91,8 @@ struct CardView: View {
         case 100...500:
             cardColor = .green
         default:
-            cardColor = .primary
+            cardColor = .clear
+
         }
     }
 }
