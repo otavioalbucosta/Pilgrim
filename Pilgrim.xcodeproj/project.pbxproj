@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F4602AB2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
+		4F4602AC2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
+		4F4602AD2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
+		4F4602AE2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
+		4F4602AF2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
+		4F4602B02A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
+		4F4602B12A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */; };
+		4F4602B22A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */; };
+		4F4602B32A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */; };
+		4F4602B42A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */; };
+		4F4602B52A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */; };
+		4F4602B62A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */; };
+		4F4602B82A40A21800AB3C95 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4602B72A40A21800AB3C95 /* SoundManager.swift */; };
+		4F4602B92A40A21800AB3C95 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4602B72A40A21800AB3C95 /* SoundManager.swift */; };
+		4F4602BA2A40A21800AB3C95 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4602B72A40A21800AB3C95 /* SoundManager.swift */; };
+		4F4602BB2A40A21800AB3C95 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4602B72A40A21800AB3C95 /* SoundManager.swift */; };
+		4F4602BC2A40A21800AB3C95 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4602B72A40A21800AB3C95 /* SoundManager.swift */; };
+		4F4602BD2A40A21800AB3C95 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4602B72A40A21800AB3C95 /* SoundManager.swift */; };
 		4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D15E02A39F67D002739CB /* PilgrimApp.swift */; };
 		4F7D15E52A39F67E002739CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D15E42A39F67E002739CB /* Assets.xcassets */; };
 		4F7D15E82A39F67E002739CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D15E72A39F67E002739CB /* Preview Assets.xcassets */; };
@@ -85,6 +103,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feedBackPositivo.mp3; sourceTree = "<group>"; };
+		4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feedBackNegativo.mp3; sourceTree = "<group>"; };
+		4F4602B72A40A21800AB3C95 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		4F7D15DD2A39F67D002739CB /* Pilgrim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pilgrim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7D15E02A39F67D002739CB /* PilgrimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilgrimApp.swift; sourceTree = "<group>"; };
 		4F7D15E42A39F67E002739CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -161,6 +182,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F4602A82A40A1EC00AB3C95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */,
+				4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4F7D15D42A39F67D002739CB = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +220,7 @@
 		4F7D15DF2A39F67D002739CB /* Pilgrim */ = {
 			isa = PBXGroup;
 			children = (
+				4F4602A82A40A1EC00AB3C95 /* Resources */,
 				B905B38C2A3A04980043311E /* Util */,
 				B905B38B2A3A04810043311E /* Model */,
 				B905B38A2A3A047B0043311E /* Viewmodel */,
@@ -294,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */,
+				4F4602B72A40A21800AB3C95 /* SoundManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -477,9 +509,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F4602AB2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */,
 				4F7D16452A39FED5002739CB /* LocalsJSON.json in Resources */,
 				4F7D15E82A39F67E002739CB /* Preview Assets.xcassets in Resources */,
 				4F7D15E52A39F67E002739CB /* Assets.xcassets in Resources */,
+				4F4602B12A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +521,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F4602B22A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */,
+				4F4602AC2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +530,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F4602B32A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */,
+				4F4602AD2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +539,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F4602B42A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */,
+				4F4602AE2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */,
 				4F7D16102A39F67F002739CB /* Preview Assets.xcassets in Resources */,
 				4F7D160D2A39F67F002739CB /* Assets.xcassets in Resources */,
 			);
@@ -510,6 +550,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F4602B52A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */,
+				4F4602AF2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +559,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F4602B62A40A1FD00AB3C95 /* feedBackNegativo.mp3 in Resources */,
+				4F4602B02A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +579,7 @@
 				4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */,
 				B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */,
 				4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */,
+				4F4602B82A40A21800AB3C95 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F7D15F22A39F67E002739CB /* PilgrimTests.swift in Sources */,
+				4F4602B92A40A21800AB3C95 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +598,7 @@
 			files = (
 				4F7D15FC2A39F67E002739CB /* PilgrimUITests.swift in Sources */,
 				4F7D15FE2A39F67E002739CB /* PilgrimUITestsLaunchTests.swift in Sources */,
+				4F4602BA2A40A21800AB3C95 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +608,7 @@
 			files = (
 				4F7D160B2A39F67E002739CB /* ContentView.swift in Sources */,
 				4F7D16092A39F67E002739CB /* PilgrimApp.swift in Sources */,
+				4F4602BB2A40A21800AB3C95 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +617,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F7D161A2A39F67F002739CB /* Pilgrim_Watch_AppTests.swift in Sources */,
+				4F4602BC2A40A21800AB3C95 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +627,7 @@
 			files = (
 				4F7D16242A39F67F002739CB /* Pilgrim_Watch_AppUITests.swift in Sources */,
 				4F7D16262A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift in Sources */,
+				4F4602BD2A40A21800AB3C95 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,7 +779,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -759,7 +809,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -791,7 +841,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -824,7 +874,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -856,7 +906,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -877,7 +927,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -898,7 +948,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -940,7 +990,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "prog.Pilgrim-Watch-AppTests";
@@ -961,7 +1011,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "prog.Pilgrim-Watch-AppTests";
@@ -982,7 +1032,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "prog.Pilgrim-Watch-AppUITests";
@@ -1002,7 +1052,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "prog.Pilgrim-Watch-AppUITests";
