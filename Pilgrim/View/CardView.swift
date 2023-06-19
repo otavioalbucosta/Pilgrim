@@ -47,7 +47,6 @@ struct CardView: View {
                             .cornerRadius(25)
                             .opacity(0.5)
                     )
-
                 )
                 .offset(offset)
                 .rotationEffect(.degrees(Double(offset.width / 40)))
@@ -60,11 +59,10 @@ struct CardView: View {
                             }
                         }
                         .onEnded { _ in
-                            withAnimation {
+                            withAnimation(.easeIn) {
                                 swipeCard(width: offset.width)
                                 changeColor(width: offset.width)
                             }
-                            offset = .zero
                             changeColor(width: offset.width)
                         }
                 )

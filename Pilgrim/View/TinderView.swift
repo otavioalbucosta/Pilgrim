@@ -29,19 +29,16 @@ struct TinderView: View {
                     .opacity(0.7)
                     .offset(CGSize(width: 10, height: 0))
             }
-            CardView(
-                localName: viewmodel.cardsQueue[1].local ?? "Não Encontrado",
-                localEstado: viewmodel.cardsQueue[1].state.rawValue,
-                url: URL(string: viewmodel.cardsQueue[1].imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg")
-            )
-            CardView(
-                localName: viewmodel.cardsQueue[0].local ?? "Não Encontrado",
-                localEstado: viewmodel.cardsQueue[0].state.rawValue,
-                url: URL(string: viewmodel.cardsQueue[0].imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg")
-            ) {
-                viewmodel.popCard()
-            } wrongChoice: {
-                viewmodel.popCard()
+            ForEach(viewmodel.cardsQueue.reversed(), id: \.self) { element in
+                CardView(
+                    localName: element.local ?? "Não Encontrado",
+                    localEstado: element.state.rawValue,
+                    url: URL(string: element.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg")
+                ) {
+                    viewmodel.popCard()
+                } wrongChoice: {
+                    viewmodel.popCard()
+                }
             }
 
             VStack {
@@ -55,7 +52,6 @@ struct TinderView: View {
                     }
                     .padding(.bottom, 80)
             }
-
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background {
@@ -67,7 +63,6 @@ struct TinderView: View {
                 }
                 .ignoresSafeArea()
         }
-
     }
 }
 
