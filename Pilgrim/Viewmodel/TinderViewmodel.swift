@@ -12,6 +12,17 @@ class TinderViewmodel: ObservableObject {
     @Published var localIndex = 0
     @Published var currentLocal: LocalElement = LocalElement(region: Region.nordeste, state: .ce, local: "", imageURL: "", localDescription: "")
     @Published var cardsQueue: [LocalElement] = []
+    @Published var isGameOver: Bool = false
+    @Published var numberOfLifesRemains: Int = 3 {
+        didSet {
+            if numberOfLifesRemains == 0 {
+                isGameOver = true
+                print("Game Over")
+            } else if numberOfLifesRemains < 0 {
+                numberOfLifesRemains = 0
+            }
+        }
+    }
 
     init() {
         getShuffleData()
@@ -38,25 +49,36 @@ class TinderViewmodel: ObservableObject {
         currentLocal = locals.first!
     }
 
-    func popCard() {
+    func popCard(_ direction: DragDirection) {
         cardsQueue.removeFirst()
         if localIndex >= 0 {
             cardsQueue.append(locals[localIndex])
             localIndex -= 1
         }
-    }
-
-    func passLocal() {
-        if locals.count > 0 {
-            localIndex += 1
-            currentLocal = locals[localIndex]
+        switch direction {
+        case .right:
+            if cardsQueue.first?.correct == true {
+                print("ACERTOU!")
+            } else {
+                loseLife()
+                print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
+            }
+        case .left:
+            if cardsQueue.first?.correct == false {
+                print("ACERTOU!")
+            } else {
+                loseLife()
+                print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
+            }
         }
     }
 
-    func returnLocal() {
-        if locals.count > 0 {
-            localIndex -= 1
-            currentLocal = locals[localIndex]
-        }
+    func loseLife() {
+        numberOfLifesRemains -= 1
     }
+}
+
+enum DragDirection {
+    case right
+    case left
 }
