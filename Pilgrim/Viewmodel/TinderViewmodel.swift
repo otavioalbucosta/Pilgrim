@@ -8,19 +8,26 @@
 import Foundation
 
 class TinderViewmodel: ObservableObject {
+
+    @Published var cardsQueue: [LocalElement] = []
+
     @Published var locals: [LocalElement] = []
     @Published var localIndex = 0
     @Published var currentLocal: LocalElement = LocalElement(region: Region.nordeste, state: .ce, local: "", imageURL: "", localDescription: "")
-    @Published var cardsQueue: [LocalElement] = []
+    @Published var isGameOver: Bool = false
+    @Published var numberOfLifesRemains: Int = 3 {
+        didSet {
+            if numberOfLifesRemains == 0 {
+                isGameOver = true
+                print("Game Over")
+            } else if numberOfLifesRemains < 0 {
+                numberOfLifesRemains = 0
+            }
+        }
+    }
 
     init() {
         getShuffleData()
-    }
-
-    func fetchLocals() {
-        let getLocals = ReadJson.instance.loadjson()
-        locals = getLocals
-        currentLocal = locals.first!
     }
 
     func getShuffleData() {
@@ -30,7 +37,8 @@ class TinderViewmodel: ObservableObject {
         let cardsToMakeWrong = allCorrectCards.prefix(wrongCardsAmount)
         let correctCards = allCorrectCards.suffix(allCorrectCards.count - wrongCardsAmount)
         let wrongCards = cardsToMakeWrong.map {
-            LocalElement(region: $0.region, state: AllStates.randomElement()!, local: $0.local, imageURL: $0.imageURL, localDescription: $0.localDescription, correct: false)
+            let randomState = AllStates.randomElement()!
+            return LocalElement(region: $0.region, state: randomState, local: $0.local, imageURL: $0.imageURL, localDescription: $0.localDescription, correct: randomState == $0.state)
         }
         locals = (wrongCards + correctCards).shuffled()
         cardsQueue = Array(locals.suffix(3))
@@ -38,25 +46,46 @@ class TinderViewmodel: ObservableObject {
         currentLocal = locals.first!
     }
 
-    func popCard() {
+    func popCard(_ direction: DragDirection) {
+        switch direction {
+        case .right:
+            if cardsQueue.first?.correct == true {
+                print("ACERTOU!")
+                SoundManager.instance.playSound(name: "feedBackPositivo")
+                HapticManager.instance.successFeedback()
+            } else {
+                print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
+                SoundManager.instance.playSound(name: "feedBackNegativo")
+                HapticManager.instance.errorFeedback()
+                loseLife()
+            }
+        case .left:
+            if cardsQueue.first?.correct == false {
+                print("ACERTOU!")
+                SoundManager.instance.playSound(name: "feedBackPositivo")
+                HapticManager.instance.successFeedback()
+            } else {
+                print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
+                SoundManager.instance.playSound(name: "feedBackNegativo")
+                HapticManager.instance.errorFeedback()
+                loseLife()
+            }
+        }
+
         cardsQueue.removeFirst()
+
         if localIndex >= 0 {
             cardsQueue.append(locals[localIndex])
             localIndex -= 1
         }
     }
 
-    func passLocal() {
-        if locals.count > 0 {
-            localIndex += 1
-            currentLocal = locals[localIndex]
-        }
+    func loseLife() {
+        numberOfLifesRemains -= 1
     }
+}
 
-    func returnLocal() {
-        if locals.count > 0 {
-            localIndex -= 1
-            currentLocal = locals[localIndex]
-        }
-    }
+enum DragDirection {
+    case right
+    case left
 }

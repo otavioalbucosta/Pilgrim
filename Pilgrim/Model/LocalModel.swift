@@ -13,7 +13,6 @@ struct LocalElement: Codable, Hashable {
     let local: String?
     let imageURL: String?
     let localDescription: String?
-
     var correct: Bool = true
 
     enum CodingKeys: CodingKey {

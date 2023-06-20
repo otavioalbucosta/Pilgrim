@@ -24,7 +24,7 @@ struct CardView: View {
                 .frame(width: 280, height: 400)
                 .overlay(
                     ZStack {
-                        KFImage(url)
+                        KFImage(source: .network(url!))
                             .resizable()
                             .cornerRadius(25)
                             .frame(width: 280, height: 440)
@@ -38,7 +38,6 @@ struct CardView: View {
                                     .foregroundColor(.white)
                                     .padding([.leading, .bottom], 15)
                                     .shadow(color: .black, radius: 2)
-
                                 Spacer()
                             }
                         }
@@ -75,10 +74,12 @@ struct CardView: View {
             offset = CGSize(width: -500, height: 0)
             cardColor = .red
             wrongChoice()
+            offset = .zero
         case 150...500:
             offset = CGSize(width: 500, height: 0)
             cardColor = .green
             correctChoice()
+            offset = .zero
         default:
             offset = .zero
         }
