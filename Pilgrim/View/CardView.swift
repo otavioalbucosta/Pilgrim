@@ -24,7 +24,7 @@ struct CardView: View {
                 .frame(width: 280, height: 400)
                 .overlay(
                     ZStack {
-                        KFImage(url)
+                        KFImage(source: .network(url!))
                             .resizable()
                             .cornerRadius(25)
                             .frame(width: 280, height: 440)
