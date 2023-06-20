@@ -8,10 +8,12 @@
 import Foundation
 
 class TinderViewmodel: ObservableObject {
+
+    @Published var cardsQueue: [LocalElement] = []
+
     @Published var locals: [LocalElement] = []
     @Published var localIndex = 0
     @Published var currentLocal: LocalElement = LocalElement(region: Region.nordeste, state: .ce, local: "", imageURL: "", localDescription: "")
-    @Published var cardsQueue: [LocalElement] = []
     @Published var isGameOver: Bool = false
     @Published var numberOfLifesRemains: Int = 3 {
         didSet {
@@ -28,12 +30,6 @@ class TinderViewmodel: ObservableObject {
         getShuffleData()
     }
 
-    func fetchLocals() {
-        let getLocals = ReadJson.instance.loadjson()
-        locals = getLocals
-        currentLocal = locals.first!
-    }
-
     func getShuffleData() {
         let allCorrectCards = ReadJson.instance.loadjson().shuffled()
         let percentage = 0.5
@@ -41,7 +37,8 @@ class TinderViewmodel: ObservableObject {
         let cardsToMakeWrong = allCorrectCards.prefix(wrongCardsAmount)
         let correctCards = allCorrectCards.suffix(allCorrectCards.count - wrongCardsAmount)
         let wrongCards = cardsToMakeWrong.map {
-            LocalElement(region: $0.region, state: AllStates.randomElement()!, local: $0.local, imageURL: $0.imageURL, localDescription: $0.localDescription, correct: false)
+            let randomState = AllStates.randomElement()!
+            return LocalElement(region: $0.region, state: randomState, local: $0.local, imageURL: $0.imageURL, localDescription: $0.localDescription, correct: randomState == $0.state)
         }
         locals = (wrongCards + correctCards).shuffled()
         cardsQueue = Array(locals.suffix(3))
@@ -50,30 +47,32 @@ class TinderViewmodel: ObservableObject {
     }
 
     func popCard(_ direction: DragDirection) {
-        cardsQueue.removeFirst()
-        if localIndex >= 0 {
-            cardsQueue.append(locals[localIndex])
-            localIndex -= 1
-        }
         switch direction {
         case .right:
             if cardsQueue.first?.correct == true {
                 print("ACERTOU!")
                 SoundManager.instance.playSound(name: "feedBackPositivo")
             } else {
-                loseLife()
                 print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
                 SoundManager.instance.playSound(name: "feedBackNegativo")
+                loseLife()
             }
         case .left:
             if cardsQueue.first?.correct == false {
                 print("ACERTOU!")
                 SoundManager.instance.playSound(name: "feedBackPositivo")
             } else {
-                loseLife()
                 print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
                 SoundManager.instance.playSound(name: "feedBackNegativo")
+                loseLife()
             }
+        }
+
+        cardsQueue.removeFirst()
+
+        if localIndex >= 0 {
+            cardsQueue.append(locals[localIndex])
+            localIndex -= 1
         }
     }
 

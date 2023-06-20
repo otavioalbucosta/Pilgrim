@@ -46,7 +46,7 @@ struct TinderView: View {
                     .fill(.thinMaterial)
                     .frame(width: 250, height: 40)
                     .overlay {
-                        Text(viewmodel.cardsQueue[0].state.rawValue)
+                         Text(viewmodel.cardsQueue.first?.state.rawValue ?? "Você viu todos os cards")
                             .font(.system(size: 20, weight: .medium, design: .default))
                     }
                     .padding(.bottom, 80)
@@ -74,7 +74,7 @@ struct TinderView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background {
-            KFImage(URL(string: viewmodel.cardsQueue[0].imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg"))
+             KFImage(URL(string: viewmodel.cardsQueue.first?.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg"))
                 .resizable()
                 .scaledToFill()
                 .overlay {

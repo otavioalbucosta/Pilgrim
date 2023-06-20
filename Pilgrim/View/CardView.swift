@@ -74,10 +74,12 @@ struct CardView: View {
             offset = CGSize(width: -500, height: 0)
             cardColor = .red
             wrongChoice()
+            offset = .zero
         case 150...500:
             offset = CGSize(width: 500, height: 0)
             cardColor = .green
             correctChoice()
+            offset = .zero
         default:
             offset = .zero
         }
