@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29371D8A2A40A3F20062FF38 /* FeedDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29371D892A40A3F20062FF38 /* FeedDetailsView.swift */; };
 		2977A2042A3CA1D7001BCC34 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2032A3CA1D7001BCC34 /* FeedView.swift */; };
 		2977A2062A3CA24D001BCC34 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2052A3CA24D001BCC34 /* InitialView.swift */; };
 		2977A2082A3CA2D2001BCC34 /* FeedComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */; };
@@ -89,6 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		29371D892A40A3F20062FF38 /* FeedDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsView.swift; sourceTree = "<group>"; };
 		2977A2032A3CA1D7001BCC34 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		2977A2052A3CA24D001BCC34 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedComponentView.swift; sourceTree = "<group>"; };
@@ -169,6 +171,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2977A20E2A4095F7001BCC34 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */,
+				2977A2032A3CA1D7001BCC34 /* FeedView.swift */,
+				29371D892A40A3F20062FF38 /* FeedDetailsView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		4F7D15D42A39F67D002739CB = {
 			isa = PBXGroup;
 			children = (
@@ -275,12 +287,11 @@
 		B905B3892A3A044F0043311E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2977A20E2A4095F7001BCC34 /* Feed */,
 				B98FD35B2A3B4CAF00AED766 /* SemiCircle.swift */,
 				B98FD35C2A3B4CAF00AED766 /* TinderView.swift */,
 				B98FD3592A3B4C9D00AED766 /* CardView.swift */,
-				2977A2032A3CA1D7001BCC34 /* FeedView.swift */,
 				2977A2052A3CA24D001BCC34 /* InitialView.swift */,
-				2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -551,6 +562,7 @@
 				4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */,
 				B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */,
 				4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */,
+				29371D8A2A40A3F20062FF38 /* FeedDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
