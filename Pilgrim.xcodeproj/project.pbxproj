@@ -41,6 +41,7 @@
 		4F7D16262A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D16252A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift */; };
 		4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D163E2A39FD5E002739CB /* LocalModel.swift */; };
 		4F7D16452A39FED5002739CB /* LocalsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D16442A39FE0B002739CB /* LocalsJSON.json */; };
+		4FD951E62A41E0F800EC2C80 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD951E52A41E0F800EC2C80 /* HapticsManager.swift */; };
 		4FDF258C2A3B308F00933466 /* AllStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF258B2A3B308F00933466 /* AllStates.swift */; };
 		B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905B38D2A3A04B70043311E /* TinderViewmodel.swift */; };
 		B98FD35A2A3B4C9D00AED766 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD3592A3B4C9D00AED766 /* CardView.swift */; };
@@ -127,6 +128,7 @@
 		4F7D16252A39F67F002739CB /* Pilgrim_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilgrim_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4F7D163E2A39FD5E002739CB /* LocalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalModel.swift; sourceTree = "<group>"; };
 		4F7D16442A39FE0B002739CB /* LocalsJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LocalsJSON.json; sourceTree = "<group>"; };
+		4FD951E52A41E0F800EC2C80 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		4FDF258B2A3B308F00933466 /* AllStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStates.swift; sourceTree = "<group>"; };
 		B905B38D2A3A04B70043311E /* TinderViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewmodel.swift; sourceTree = "<group>"; };
 		B98FD3592A3B4C9D00AED766 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 			children = (
 				B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */,
 				4F4602B72A40A21800AB3C95 /* SoundManager.swift */,
+				4FD951E52A41E0F800EC2C80 /* HapticsManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */,
 				B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */,
 				4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */,
+				4FD951E62A41E0F800EC2C80 /* HapticsManager.swift in Sources */,
 				4F4602B82A40A21800AB3C95 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
