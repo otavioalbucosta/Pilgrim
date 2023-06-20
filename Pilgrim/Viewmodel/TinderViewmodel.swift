@@ -52,18 +52,22 @@ class TinderViewmodel: ObservableObject {
             if cardsQueue.first?.correct == true {
                 print("ACERTOU!")
                 SoundManager.instance.playSound(name: "feedBackPositivo")
+                HapticManager.instance.successFeedback()
             } else {
                 print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
                 SoundManager.instance.playSound(name: "feedBackNegativo")
+                HapticManager.instance.errorFeedback()
                 loseLife()
             }
         case .left:
             if cardsQueue.first?.correct == false {
                 print("ACERTOU!")
                 SoundManager.instance.playSound(name: "feedBackPositivo")
+                HapticManager.instance.successFeedback()
             } else {
                 print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
                 SoundManager.instance.playSound(name: "feedBackNegativo")
+                HapticManager.instance.errorFeedback()
                 loseLife()
             }
         }
