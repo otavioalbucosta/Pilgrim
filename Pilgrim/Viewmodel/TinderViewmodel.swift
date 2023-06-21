@@ -34,11 +34,13 @@ class TinderViewmodel: ObservableObject {
         getShuffleData()
         let correctData = UserDefaults.standard.data(forKey: "correctLocal")
         let decoder = JSONDecoder()
-        do {
-            let decodedData = try decoder.decode([LocalElement].self, from: correctData!)
-            correctLocals = decodedData
-        } catch {
-            print(error)
+        if correctData != nil {
+            do {
+                let decodedData = try decoder.decode([LocalElement].self, from: correctData!)
+                correctLocals = decodedData
+            } catch {
+                print(error)
+            }
         }
     }
 
