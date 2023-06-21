@@ -25,6 +25,11 @@
 		4F4602BB2A40A21800AB3C95 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4602B72A40A21800AB3C95 /* SoundManager.swift */; };
 		4F4602BC2A40A21800AB3C95 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4602B72A40A21800AB3C95 /* SoundManager.swift */; };
 		4F4602BD2A40A21800AB3C95 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4602B72A40A21800AB3C95 /* SoundManager.swift */; };
+		29371D8A2A40A3F20062FF38 /* FeedDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29371D892A40A3F20062FF38 /* FeedDetailsView.swift */; };
+		2977A2042A3CA1D7001BCC34 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2032A3CA1D7001BCC34 /* FeedView.swift */; };
+		2977A2062A3CA24D001BCC34 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2052A3CA24D001BCC34 /* InitialView.swift */; };
+		2977A2082A3CA2D2001BCC34 /* FeedComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */; };
+		2977A20A2A3CA850001BCC34 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2092A3CA850001BCC34 /* FeedViewModel.swift */; };
 		4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D15E02A39F67D002739CB /* PilgrimApp.swift */; };
 		4F7D15E52A39F67E002739CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D15E42A39F67E002739CB /* Assets.xcassets */; };
 		4F7D15E82A39F67E002739CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7D15E72A39F67E002739CB /* Preview Assets.xcassets */; };
@@ -104,6 +109,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		29371D892A40A3F20062FF38 /* FeedDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsView.swift; sourceTree = "<group>"; };
+		2977A2032A3CA1D7001BCC34 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		2977A2052A3CA24D001BCC34 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedComponentView.swift; sourceTree = "<group>"; };
+		2977A2092A3CA850001BCC34 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feedBackPositivo.mp3; sourceTree = "<group>"; };
 		4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feedBackNegativo.mp3; sourceTree = "<group>"; };
 		4F4602B72A40A21800AB3C95 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
@@ -184,6 +194,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2977A20E2A4095F7001BCC34 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */,
+				2977A2032A3CA1D7001BCC34 /* FeedView.swift */,
+				29371D892A40A3F20062FF38 /* FeedDetailsView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		4F4602A82A40A1EC00AB3C95 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,9 +320,11 @@
 		B905B3892A3A044F0043311E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2977A20E2A4095F7001BCC34 /* Feed */,
 				B98FD35B2A3B4CAF00AED766 /* SemiCircle.swift */,
 				B98FD35C2A3B4CAF00AED766 /* TinderView.swift */,
 				B98FD3592A3B4C9D00AED766 /* CardView.swift */,
+				2977A2052A3CA24D001BCC34 /* InitialView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				B905B38D2A3A04B70043311E /* TinderViewmodel.swift */,
+				2977A2092A3CA850001BCC34 /* FeedViewModel.swift */,
 			);
 			path = Viewmodel;
 			sourceTree = "<group>";
@@ -575,6 +598,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B98FD3602A3B4CBC00AED766 /* JSONReader.swift in Sources */,
+				2977A2042A3CA1D7001BCC34 /* FeedView.swift in Sources */,
+				2977A20A2A3CA850001BCC34 /* FeedViewModel.swift in Sources */,
+				2977A2082A3CA2D2001BCC34 /* FeedComponentView.swift in Sources */,
+				2977A2062A3CA24D001BCC34 /* InitialView.swift in Sources */,
 				B98FD35D2A3B4CAF00AED766 /* SemiCircle.swift in Sources */,
 				B98FD35E2A3B4CAF00AED766 /* TinderView.swift in Sources */,
 				B98FD35A2A3B4C9D00AED766 /* CardView.swift in Sources */,
@@ -582,6 +609,7 @@
 				4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */,
 				B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */,
 				4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */,
+				29371D8A2A40A3F20062FF38 /* FeedDetailsView.swift in Sources */,
 				4FD951E62A41E0F800EC2C80 /* HapticsManager.swift in Sources */,
 				4F4602B82A40A21800AB3C95 /* SoundManager.swift in Sources */,
 			);
@@ -858,7 +886,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -891,7 +919,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -976,7 +1004,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = 8YQ35HP37L;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
