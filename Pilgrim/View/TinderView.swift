@@ -20,6 +20,11 @@ struct TinderView: View {
                     .foregroundColor(.red)
                     .opacity(0.7)
                     .offset(CGSize(width: -10, height: 0))
+                    .overlay {
+                        Image(systemName: "xmark")
+                            .foregroundColor(.white)
+                            .padding(.trailing)
+                    }
                 Spacer()
                 SemiCircle()
                     .frame(width: 50, height: 100)
@@ -27,7 +32,13 @@ struct TinderView: View {
                     .rotationEffect(.degrees(180))
                     .opacity(0.7)
                     .offset(CGSize(width: 10, height: 0))
+                    .overlay {
+                        Image(systemName: "checkmark")
+                            .foregroundColor(.white)
+                            .padding(.leading)
+                    }
             }
+            .padding(.top, 120)
             ForEach(viewmodel.cardsQueue.reversed(), id: \.self) { element in
                 CardView(
                     localName: element.local ?? "Não Encontrado",
@@ -38,43 +49,94 @@ struct TinderView: View {
                 } wrongChoice: {
                     viewmodel.popCard(.left)
                 }
-            }
+            }.padding(.top, 120)
 
             VStack {
-                Spacer()
-                RoundedRectangle(cornerRadius: 15)
-                    .fill(.thinMaterial)
-                    .frame(width: 250, height: 40)
-                    .overlay {
-                         Text(viewmodel.cardsQueue.first?.state.rawValue ?? "Você viu todos os cards")
-                            .font(.system(size: 20, weight: .medium, design: .default))
-                    }
-                    .padding(.bottom, 80)
-            }
 
-            if !viewmodel.isGameOver {
-                VStack {
+                // MARK: Vidas
+                if !viewmodel.isGameOver {
                     HStack {
                         ForEach(0...viewmodel.numberOfLifesRemains-1, id: \.self) { life in
                             Circle()
+                                .fill(.linearGradient(.init(colors: [.red, .pink]), startPoint: .top, endPoint: .bottom))
                                 .frame(width: 50)
                                 .padding(.top, 50)
+
                         }
                         Spacer()
                     }
                     .padding(.leading, 45)
+                    RoundedRectangle(cornerRadius: 15)
+                        .fill(.thinMaterial)
+                        .frame(width: 250, height: 40)
+                        .overlay {
+                            Text(viewmodel.cardsQueue.first?.state.rawValue ?? "Você viu todos os cards")
+                                .font(.system(size: 20, weight: .medium, design: .default))
+                        }
+                        .padding(.top, 25)
                     Spacer()
                 }
-            }
 
-            if viewmodel.isGameOver {
-                Rectangle()
-                    .animation(.linear(duration: 3), value: 10)
+                // MARK: Tela de Game Over
+                if viewmodel.isGameOver {
+                    ZStack {
+                        Rectangle()
+                            .fill(.thinMaterial)
+                            .ignoresSafeArea()
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 300, height: 450)
+                            .overlay {
+                                VStack(spacing: 15) {
+
+                                    HStack {
+                                        Spacer()
+                                        Text("Você perdeu!")
+                                            .colorInvert()
+                                            .font(.system(size: 20, weight: .bold))
+                                        Spacer()
+                                    }
+
+                                    VStack(alignment: .leading, spacing: 15) {
+                                        Text("Total de acertos na partida: 10")
+                                            .colorInvert()
+                                        Text("Acertos consecutivos: 4")
+                                            .colorInvert()
+                                        // ESSE RETANGULO É A LINHA, REVER ESSE CÓDIGO!
+                                        Rectangle()
+                                            .fill(.black)
+                                            .frame(width: 280, height: 2)
+                                        Text("Pontuação: 14")
+                                            .colorInvert()
+                                        Text("Melhor pontuação: 16")
+                                            .colorInvert()
+                                    }
+                                    .padding(.leading, 10)
+
+                                    Button("Jogar Novamente") {
+                                        print("JOGAR NOVAMENTE")
+                                    }
+                                    Spacer()
+                                }
+                                .padding(.top, 29)
+                            }
+
+                        VStack {
+                            Spacer()
+                            Image("Pilgrim")
+                                .resizable()
+                                .frame(width: 200, height: 250)
+                                .animation(.linear(duration: 3), value: 10)
+                                .padding(.top, 25)
+
+                        }
+                    }
+
+                }
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background {
-             KFImage(URL(string: viewmodel.cardsQueue.first?.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg"))
+            KFImage(URL(string: viewmodel.cardsQueue.first?.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg"))
                 .resizable()
                 .scaledToFill()
                 .overlay {

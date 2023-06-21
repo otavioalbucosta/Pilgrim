@@ -31,7 +31,6 @@ struct CardView: View {
                             .scaledToFit()
                             .shadow(radius: 2)
                         VStack {
-                            Spacer()
                             HStack {
                                 Text(localName)
                                     .font(.system(size: 25, weight: .bold, design: .default))
@@ -40,6 +39,8 @@ struct CardView: View {
                                     .shadow(color: .black, radius: 2)
                                 Spacer()
                             }
+                            .padding(.top, 15)
+                            Spacer()
                         }
                     }.overlay(
                         cardColor
@@ -88,9 +89,9 @@ struct CardView: View {
     func changeColor(width: CGFloat) {
         switch width {
         case -500...(-100):
-            cardColor = .red
+            cardColor = .gray
         case 100...500:
-            cardColor = .green
+            cardColor = .gray
         default:
             cardColor = .clear
 
