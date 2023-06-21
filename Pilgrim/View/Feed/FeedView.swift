@@ -13,21 +13,17 @@ struct FeedView: View {
         NavigationStack{
             ScrollView {
                 VStack{
-                    ForEach(viewmodel.mock, id: \.self) { element in
+                    ForEach(viewmodel.cardsToFeed, id: \.self) { element in
                         NavigationLink {
                             FeedDetailsView(local: element)
                         } label: {
                             FeedComponentView(local: element)
                         }
                         .buttonStyle(.plain)
-
-
-
                     }
                 }
             }
         }
-
     }
 }
 

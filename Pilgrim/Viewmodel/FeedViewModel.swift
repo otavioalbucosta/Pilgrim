@@ -9,6 +9,33 @@ import Foundation
 
 class FeedViewModel: ObservableObject {
     @Published var cardsToFeed = [LocalElement]()
+
+    init() {
+        let cards = loadCorrectLocal()
+        if (cardsToFeed.count > 0) {
+            for card in cards {
+                cardsToFeed.append(card)
+            }
+        } else {
+            self.cardsToFeed = cards
+        }
+    }
+
+    func loadCorrectLocal() -> [LocalElement] {
+        do {
+            guard let localData = UserDefaults.standard.data(forKey: "correctLocal") else {
+//                return LocalElement(region: .nordeste, state: .ce, local: "", imageURL: "", localDescription: "")
+                return []
+            }
+            let decoder = JSONDecoder()
+            let decodedData = try decoder.decode([LocalElement].self, from: localData)
+            return decodedData
+        } catch {
+            print(error)
+//            return LocalElement(region: .nordeste, state: .ce, local: "", imageURL: "", localDescription: "")
+            return []
+        }
+    }
     
     
 //    func fetchCorrectCards() -> [LocalElement] {

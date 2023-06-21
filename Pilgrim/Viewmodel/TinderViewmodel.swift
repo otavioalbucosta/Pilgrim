@@ -26,8 +26,20 @@ class TinderViewmodel: ObservableObject {
         }
     }
 
+    var correctLocals: [LocalElement] = []
+
+    // TODO: Realizar a persistência dos dados utilizando UserDefaults e para as imagens utilizar FileManager.
+
     init() {
         getShuffleData()
+        let correctData = UserDefaults.standard.data(forKey: "correctLocal")
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode([LocalElement].self, from: correctData!)
+            correctLocals = decodedData
+        } catch {
+            print(error)
+        }
     }
 
     func getShuffleData() {
@@ -53,6 +65,9 @@ class TinderViewmodel: ObservableObject {
                 print("ACERTOU!")
                 SoundManager.instance.playSound(name: "feedBackPositivo")
                 HapticManager.instance.successFeedback()
+                correctLocals.append(cardsQueue.first!)
+                let localsData = JSONWrite.encodeObject(correctLocals)
+                UserDefaults.standard.set(localsData, forKey: "correctLocal")
             } else {
                 print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
                 SoundManager.instance.playSound(name: "feedBackNegativo")
@@ -64,6 +79,9 @@ class TinderViewmodel: ObservableObject {
                 print("ACERTOU!")
                 SoundManager.instance.playSound(name: "feedBackPositivo")
                 HapticManager.instance.successFeedback()
+                correctLocals.append(cardsQueue.first!)
+                let localsData = JSONWrite.encodeObject(correctLocals)
+                UserDefaults.standard.set(localsData, forKey: "correctLocal")
             } else {
                 print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
                 SoundManager.instance.playSound(name: "feedBackNegativo")
