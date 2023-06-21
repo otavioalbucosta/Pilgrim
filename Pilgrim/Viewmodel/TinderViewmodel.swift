@@ -25,6 +25,7 @@ class TinderViewmodel: ObservableObject {
             }
         }
     }
+
     var correctLocals: [LocalElement] = []
 
     // TODO: Realizar a persistência dos dados utilizando UserDefaults e para as imagens utilizar FileManager.
@@ -58,7 +59,7 @@ class TinderViewmodel: ObservableObject {
                 HapticManager.instance.successFeedback()
                 correctLocals.append(cardsQueue.first!)
                 let localsData = JSONWrite.encodeObject(correctLocals)
-                UserDefaults.standard.set(localsData, forKey: "correctLocals")
+                UserDefaults.standard.set(localsData, forKey: "correctLocal")
             } else {
                 print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
                 SoundManager.instance.playSound(name: "feedBackNegativo")
@@ -72,7 +73,7 @@ class TinderViewmodel: ObservableObject {
                 HapticManager.instance.successFeedback()
                 correctLocals.append(cardsQueue.first!)
                 let localsData = JSONWrite.encodeObject(correctLocals)
-                UserDefaults.standard.set(localsData, forKey: "correctLocals")
+                UserDefaults.standard.set(localsData, forKey: "correctLocal")
             } else {
                 print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
                 SoundManager.instance.playSound(name: "feedBackNegativo")

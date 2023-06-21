@@ -8,7 +8,7 @@
 import Foundation
 
 class JSONWrite {
-    static func encodeObject<T: Codable>(_ object: [T]) -> Data {
+    static func encodeObject<T: Codable>(_ object: T) -> Data {
         do {
             let encode = JSONEncoder()
             encode.outputFormatting = .prettyPrinted
