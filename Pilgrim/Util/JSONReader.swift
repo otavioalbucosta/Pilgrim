@@ -16,7 +16,6 @@ class ReadJson {
 
             do {
                 let data = try Data(contentsOf: url)
-
                 let decoder = JSONDecoder()
                 let jsonData: [LocalElement] =  try decoder.decode([LocalElement].self, from: data)
                 return jsonData
