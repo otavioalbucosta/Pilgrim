@@ -14,21 +14,20 @@ struct FeedComponentView: View {
 //    var placeDescription: String
 //    var placeTitle: String
 //    var placeLocation: Region
+    @State var isBlocked: Bool = false
     var local: LocalElement
     var body: some View {
-        VStack(alignment: .leading, spacing: 1) {
-            Text("\(local.local!)")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(EdgeInsets(top: 10, leading: 5, bottom: 0, trailing: 10))
-            Text("\(local.region.rawValue)")
-                .font(.title2)
-                .fontWeight(.bold)
-                .padding(EdgeInsets(top: 0, leading: 5, bottom: 10, trailing: 10))
-            KFImage(URL(string:local.imageURL!))
-                .resizable()
-                .scaledToFit()
+        if isBlocked {
+            
+        }else {
+            VStack(alignment: .leading, spacing: 1) {
+                KFImage(URL(string:local.imageURL!))
+                    .resizable()
+                    .frame(width: 155,height: 155)
+                    .cornerRadius(25)
+            }
         }
+
     }
 }
 
