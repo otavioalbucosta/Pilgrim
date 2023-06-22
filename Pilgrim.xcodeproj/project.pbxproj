@@ -149,7 +149,6 @@
 		B98FD35C2A3B4CAF00AED766 /* TinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderView.swift; sourceTree = "<group>"; };
 		B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		B9EF5B752A4323AC0081272F /* JSONWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONWrite.swift; sourceTree = "<group>"; };
-		B9EF5B782A433AE70081272F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +220,6 @@
 		4F7D15D42A39F67D002739CB = {
 			isa = PBXGroup;
 			children = (
-				B9EF5B772A433AE70081272F /* Feed */,
 				4F7D15DF2A39F67D002739CB /* Pilgrim */,
 				4F7D15F02A39F67E002739CB /* PilgrimTests */,
 				4F7D15FA2A39F67E002739CB /* PilgrimUITests */,
@@ -362,15 +360,6 @@
 				B9EF5B752A4323AC0081272F /* JSONWrite.swift */,
 			);
 			path = Util;
-			sourceTree = "<group>";
-		};
-		B9EF5B772A433AE70081272F /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				B9EF5B782A433AE70081272F /* FeedView.swift */,
-			);
-			name = Feed;
-			path = Pilgrim/View/Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

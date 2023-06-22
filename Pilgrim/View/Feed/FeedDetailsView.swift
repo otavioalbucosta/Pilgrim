@@ -74,6 +74,7 @@ struct FeedDetailsView: View {
         .onTapGesture {
             flipCard()
         }
+        
 
     }
 }
