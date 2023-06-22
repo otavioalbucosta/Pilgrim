@@ -27,7 +27,15 @@ struct FeedView: View {
                             NavigationLink {
                                 FeedDetailsView(local: element)
                             } label: {
-                                FeedComponentView(local: element)
+                                FeedComponentView(isBlocked: false, local: element)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                        ForEach(Array(viewmodel.remainingUnkownCards.enumerated()), id: \.offset) { (_, element) in
+                            NavigationLink {
+                                FeedDetailsView(local: element)
+                            } label: {
+                                FeedComponentView(isBlocked: true, local: element)
                             }
                             .buttonStyle(.plain)
                         }
