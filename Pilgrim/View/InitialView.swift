@@ -14,7 +14,7 @@ struct InitialView: View {
             FeedView()
                 .tabItem {
                     Label {
-                        Text("Title")
+                        Text("Feed")
                     } icon: {
                         Image(systemName: "house.fill")
                     }
