@@ -23,7 +23,7 @@ struct FeedView: View {
                         .padding(EdgeInsets(top: 10, leading: 20, bottom: 20, trailing: 0))
 //                    VStack{
                     LazyVGrid(columns: [GridItem(), GridItem()], spacing: 10){
-                        ForEach(Array(viewmodel.cardsToFeed.enumerated()), id: \.offset) { (_, element) in
+                        ForEach((viewmodel.cardsToFeed), id: \.self) {  element in
                             NavigationLink {
                                 FeedDetailsView(local: element)
                             } label: {
@@ -31,7 +31,7 @@ struct FeedView: View {
                             }
                             .buttonStyle(.plain)
                         }
-                        ForEach(Array(viewmodel.remainingUnkownCards.enumerated()), id: \.offset) { (_, element) in
+                        ForEach(viewmodel.remainingUnkownCards, id: \.self) { element in
                             NavigationLink {
                                 FeedDetailsView(local: element)
                             } label: {
