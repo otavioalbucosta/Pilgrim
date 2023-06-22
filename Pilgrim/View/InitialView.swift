@@ -29,6 +29,7 @@ struct InitialView: View {
 
                 }
         }
+
     }
 }
 

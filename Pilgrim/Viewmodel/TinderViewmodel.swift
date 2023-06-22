@@ -70,7 +70,9 @@ class TinderViewmodel: ObservableObject {
                 print("ACERTOU!")
                 SoundManager.instance.playSound(name: "feedBackPositivo")
                 HapticManager.instance.successFeedback()
-                correctLocals.append(cardsQueue.first!)
+                if !correctLocals.contains(cardsQueue.first!){
+                    correctLocals.append(cardsQueue.first!)
+                }
                 let localsData = JSONWrite.encodeObject(correctLocals)
                 UserDefaults.standard.set(localsData, forKey: "correctLocal")
                 scoreIncrease()
@@ -86,7 +88,9 @@ class TinderViewmodel: ObservableObject {
                 print("ACERTOU!")
                 SoundManager.instance.playSound(name: "feedBackPositivo")
                 HapticManager.instance.successFeedback()
-                correctLocals.append(cardsQueue.first!)
+                if !correctLocals.contains(cardsQueue.first!){
+                    correctLocals.append(cardsQueue.first!)
+                }
                 let localsData = JSONWrite.encodeObject(correctLocals)
                 UserDefaults.standard.set(localsData, forKey: "correctLocal")
                 scoreIncrease()
