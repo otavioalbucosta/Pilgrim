@@ -13,6 +13,13 @@ struct FeedView: View {
         NavigationStack{
             ScrollView {
                 VStack{
+                    if viewmodel.cardsToFeed.isEmpty{
+                        Spacer()
+                        Text("Você não possui cartas acertadas ainda :( ")
+                        Text("Jogue mais o Jogo para desbloquear cartas acertadas")
+                            .multilineTextAlignment(.center)
+                        Spacer()
+                    }
                     ForEach(viewmodel.cardsToFeed, id: \.self) { element in
                         NavigationLink {
                             FeedDetailsView(local: element)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29371D8A2A40A3F20062FF38 /* FeedDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29371D892A40A3F20062FF38 /* FeedDetailsView.swift */; };
+		29371D8E2A4333190062FF38 /* WCSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29371D8D2A4333190062FF38 /* WCSessionManager.swift */; };
 		2977A2042A3CA1D7001BCC34 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2032A3CA1D7001BCC34 /* FeedView.swift */; };
 		2977A2062A3CA24D001BCC34 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2052A3CA24D001BCC34 /* InitialView.swift */; };
 		2977A2082A3CA2D2001BCC34 /* FeedComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */; };
@@ -111,6 +112,7 @@
 
 /* Begin PBXFileReference section */
 		29371D892A40A3F20062FF38 /* FeedDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsView.swift; sourceTree = "<group>"; };
+		29371D8D2A4333190062FF38 /* WCSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSessionManager.swift; sourceTree = "<group>"; };
 		2977A2032A3CA1D7001BCC34 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		2977A2052A3CA24D001BCC34 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedComponentView.swift; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 				B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */,
 				4F4602B72A40A21800AB3C95 /* SoundManager.swift */,
 				4FD951E52A41E0F800EC2C80 /* HapticsManager.swift */,
+				29371D8D2A4333190062FF38 /* WCSessionManager.swift */,
 				B9EF5B752A4323AC0081272F /* JSONWrite.swift */,
 			);
 			path = Util;
@@ -621,6 +624,7 @@
 				B98FD35A2A3B4C9D00AED766 /* CardView.swift in Sources */,
 				4FDF258C2A3B308F00933466 /* AllStates.swift in Sources */,
 				4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */,
+				29371D8E2A4333190062FF38 /* WCSessionManager.swift in Sources */,
 				B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */,
 				4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */,
 				29371D8A2A40A3F20062FF38 /* FeedDetailsView.swift in Sources */,
