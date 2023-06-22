@@ -12,6 +12,7 @@ struct TinderView: View {
 
     @StateObject var viewmodel = TinderViewmodel()
 
+
     var body: some View {
         ZStack {
             HStack {
@@ -55,14 +56,19 @@ struct TinderView: View {
 
                 // MARK: Vidas
                 if !viewmodel.isGameOver {
-                    HStack {
+                    HStack(spacing: 15) {
                         ForEach(0...viewmodel.numberOfLifesRemains-1, id: \.self) { life in
-                            Circle()
-                                .fill(.linearGradient(.init(colors: [.red, .pink]), startPoint: .top, endPoint: .bottom))
-                                .frame(width: 50)
+//                            Circle()
+//                                .fill(.linearGradient(.init(colors: [.red, .pink]), startPoint: .top, endPoint: .bottom))
+//                                .frame(width: 50)
+//                                .padding(.top, 50)
+                            Image("seloCoracao")
+                                .resizable()
+                                .frame(width: 50, height: 50)
                                 .padding(.top, 50)
 
                         }
+
                         Spacer()
                     }
                     .padding(.leading, 45)
@@ -99,14 +105,10 @@ struct TinderView: View {
                                     VStack(alignment: .leading, spacing: 15) {
                                         Text("Total de acertos na partida: \(viewmodel.score)")
                                             .colorInvert()
-//                                        Text("Acertos consecutivos: 4")
-//                                            .colorInvert()
-                                        // ESSE RETANGULO É A LINHA, REVER ESSE CÓDIGO!
+                                        // MARK: ESSE RETANGULO É A LINHA, REVER ESSE CÓDIGO!
                                         Rectangle()
                                             .fill(.secondary)
                                             .frame(width: 280, height: 2)
-//                                        Text("Pontuação: 14")
-//                                            .colorInvert()
                                         Text("Melhor pontuação: \(viewmodel.highScore)")
                                             .colorInvert()
                                     }
