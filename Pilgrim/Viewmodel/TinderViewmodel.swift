@@ -10,7 +10,6 @@ import Foundation
 class TinderViewmodel: ObservableObject {
 
     @Published var cardsQueue: [LocalElement] = []
-
     @Published var locals: [LocalElement] = []
     @Published var localIndex = 0
     @Published var currentLocal: LocalElement = LocalElement(region: Region.nordeste, state: .ce, local: "", imageURL: "", localDescription: "")
@@ -25,7 +24,9 @@ class TinderViewmodel: ObservableObject {
             }
         }
     }
+    @Published var score: Int = 0
 
+    var highScore: Int = 0
     var correctLocals: [LocalElement] = []
 
     // TODO: Realizar a persistência dos dados utilizando UserDefaults e para as imagens utilizar FileManager.
@@ -33,6 +34,7 @@ class TinderViewmodel: ObservableObject {
     init() {
         getShuffleData()
         let correctData = UserDefaults.standard.data(forKey: "correctLocal")
+        let highScoreInteger = UserDefaults.standard.integer(forKey: "highScore")
         let decoder = JSONDecoder()
         if correctData != nil {
             do {
@@ -42,6 +44,7 @@ class TinderViewmodel: ObservableObject {
                 print(error)
             }
         }
+        highScore = highScoreInteger
     }
 
     func getShuffleData() {
@@ -70,6 +73,8 @@ class TinderViewmodel: ObservableObject {
                 correctLocals.append(cardsQueue.first!)
                 let localsData = JSONWrite.encodeObject(correctLocals)
                 UserDefaults.standard.set(localsData, forKey: "correctLocal")
+                scoreIncrease()
+
             } else {
                 print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
                 SoundManager.instance.playSound(name: "feedBackNegativo")
@@ -84,6 +89,7 @@ class TinderViewmodel: ObservableObject {
                 correctLocals.append(cardsQueue.first!)
                 let localsData = JSONWrite.encodeObject(correctLocals)
                 UserDefaults.standard.set(localsData, forKey: "correctLocal")
+                scoreIncrease()
             } else {
                 print("ERROU, VIDAS RESTANTES: \(numberOfLifesRemains)")
                 SoundManager.instance.playSound(name: "feedBackNegativo")
@@ -98,10 +104,29 @@ class TinderViewmodel: ObservableObject {
             cardsQueue.append(locals[localIndex])
             localIndex -= 1
         }
+        compareHighScore(score)
     }
 
     func loseLife() {
         numberOfLifesRemains -= 1
+    }
+
+    func resetGame() {
+        numberOfLifesRemains = 3
+        isGameOver = false
+        getShuffleData()
+        
+    }
+
+    private func scoreIncrease() {
+        score += 1
+    }
+
+    private func compareHighScore(_ currentScore: Int) {
+        if currentScore > highScore {
+            UserDefaults.standard.set(currentScore, forKey: "highScore")
+            highScore = score
+        }
     }
 }
 
