@@ -97,24 +97,27 @@ struct TinderView: View {
                                     }
 
                                     VStack(alignment: .leading, spacing: 15) {
-                                        Text("Total de acertos na partida: 10")
+                                        Text("Total de acertos na partida: \(viewmodel.score)")
                                             .colorInvert()
-                                        Text("Acertos consecutivos: 4")
-                                            .colorInvert()
+//                                        Text("Acertos consecutivos: 4")
+//                                            .colorInvert()
                                         // ESSE RETANGULO É A LINHA, REVER ESSE CÓDIGO!
                                         Rectangle()
-                                            .fill(.black)
+                                            .fill(.secondary)
                                             .frame(width: 280, height: 2)
-                                        Text("Pontuação: 14")
-                                            .colorInvert()
-                                        Text("Melhor pontuação: 16")
+//                                        Text("Pontuação: 14")
+//                                            .colorInvert()
+                                        Text("Melhor pontuação: \(viewmodel.highScore)")
                                             .colorInvert()
                                     }
                                     .padding(.leading, 10)
 
                                     Button("Jogar Novamente") {
-                                        print("JOGAR NOVAMENTE")
+                                        withAnimation {
+                                            viewmodel.resetGame()
+                                        }
                                     }
+                                    .buttonStyle(.borderedProminent)
                                     Spacer()
                                 }
                                 .padding(.top, 29)
