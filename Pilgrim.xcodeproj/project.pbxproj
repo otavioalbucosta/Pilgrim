@@ -61,6 +61,7 @@
 		B98FD3632A3B5C9E00AED766 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B98FD3622A3B5C9E00AED766 /* Kingfisher */; };
 		B9E08AF82A45DF0300630F60 /* JSONWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF5B752A4323AC0081272F /* JSONWrite.swift */; };
 		B9EF5B762A4323AC0081272F /* JSONWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF5B752A4323AC0081272F /* JSONWrite.swift */; };
+		B9F590B62A44E22400749CED /* GameCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F590B52A44E22400749CED /* GameCenterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +157,10 @@
 		B98FD35C2A3B4CAF00AED766 /* TinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderView.swift; sourceTree = "<group>"; };
 		B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		B9EF5B752A4323AC0081272F /* JSONWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONWrite.swift; sourceTree = "<group>"; };
+		B9EF5B782A433AE70081272F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		B9F590B32A44E1C800749CED /* Pilgrim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pilgrim.entitlements; sourceTree = "<group>"; };
+		B9F590B52A44E22400749CED /* GameCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterViewController.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +232,10 @@
 		4F7D15D42A39F67D002739CB = {
 			isa = PBXGroup;
 			children = (
+
+				B9F590B42A44E1FE00749CED /* GameCenter */,
+				B9EF5B772A433AE70081272F /* Feed */,
+
 				4F7D15DF2A39F67D002739CB /* Pilgrim */,
 				4F7D15F02A39F67E002739CB /* PilgrimTests */,
 				4F7D15FA2A39F67E002739CB /* PilgrimUITests */,
@@ -253,6 +262,7 @@
 		4F7D15DF2A39F67D002739CB /* Pilgrim */ = {
 			isa = PBXGroup;
 			children = (
+				B9F590B32A44E1C800749CED /* Pilgrim.entitlements */,
 				4F4602A82A40A1EC00AB3C95 /* Resources */,
 				B905B38C2A3A04980043311E /* Util */,
 				B905B38B2A3A04810043311E /* Model */,
@@ -387,6 +397,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B9EF5B772A433AE70081272F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF5B782A433AE70081272F /* FeedView.swift */,
+			);
+			name = Feed;
+			path = Pilgrim/View/Feed;
+			sourceTree = "<group>";
+		};
+		B9F590B42A44E1FE00749CED /* GameCenter */ = {
+			isa = PBXGroup;
+			children = (
+				B9F590B52A44E22400749CED /* GameCenterViewController.swift */,
+			);
+			path = GameCenter;
+			sourceTree = "<group>";
+		};
+
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -640,6 +668,7 @@
 				4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */,
 				29371D8E2A4333190062FF38 /* WCSessionManager.swift in Sources */,
 				B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */,
+				B9F590B62A44E22400749CED /* GameCenterViewController.swift in Sources */,
 				4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */,
 				29371D8A2A40A3F20062FF38 /* FeedDetailsView.swift in Sources */,
 				4FD951E62A41E0F800EC2C80 /* HapticsManager.swift in Sources */,
@@ -850,7 +879,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = PPSYB39C6H;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -882,7 +911,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = PPSYB39C6H;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -912,10 +941,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pilgrim/Pilgrim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -944,10 +974,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pilgrim/Pilgrim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -978,7 +1009,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -999,7 +1030,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -1020,7 +1051,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 949BRFMFQG;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -1040,7 +1071,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8YQ35HP37L;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
