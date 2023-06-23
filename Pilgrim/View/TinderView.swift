@@ -12,7 +12,6 @@ struct TinderView: View {
 
     @StateObject var viewmodel = TinderViewmodel()
 
-
     var body: some View {
         ZStack {
             HStack {
@@ -42,7 +41,7 @@ struct TinderView: View {
             .padding(.top, 120)
             ForEach(viewmodel.cardsQueue.reversed(), id: \.self) { element in
                 CardView(
-                    localName: element.local ?? "Não Encontrado",
+                    localName: element.local,
                     localEstado: element.state.rawValue,
                     url: URL(string: element.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg")
                 ) {
@@ -53,22 +52,25 @@ struct TinderView: View {
             }.padding(.top, 120)
 
             VStack {
+                Spacer()
+                HStack {
+                    Text("Score: \(viewmodel.score)")
+                        .font(.system(size: 25, weight: .medium, design: .default))
+                        .padding(.bottom, 20)
+                }
+            }
+
+            VStack {
 
                 // MARK: Vidas
                 if !viewmodel.isGameOver {
                     HStack(spacing: 15) {
                         ForEach(0...viewmodel.numberOfLifesRemains-1, id: \.self) { life in
-//                            Circle()
-//                                .fill(.linearGradient(.init(colors: [.red, .pink]), startPoint: .top, endPoint: .bottom))
-//                                .frame(width: 50)
-//                                .padding(.top, 50)
                             Image("seloCoracao")
                                 .resizable()
                                 .frame(width: 50, height: 50)
                                 .padding(.top, 50)
-
                         }
-
                         Spacer()
                     }
                     .padding(.leading, 45)
