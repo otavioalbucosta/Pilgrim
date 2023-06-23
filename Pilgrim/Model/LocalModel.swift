@@ -10,7 +10,7 @@ import Foundation
 struct LocalElement: Codable, Hashable {
     let region: Region
     let state: States
-    let local: String?
+    let local: String
     let imageURL: String?
     let localDescription: String?
     var correct: Bool = true

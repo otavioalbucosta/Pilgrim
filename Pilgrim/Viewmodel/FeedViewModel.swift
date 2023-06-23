@@ -9,17 +9,37 @@ import Foundation
 
 class FeedViewModel: ObservableObject {
     @Published var cardsToFeed = [LocalElement]()
+    @Published var remainingUnkownCards = [LocalElement]()
 
     init() {
+        recvCorrectCards()
+    }
+    
+    func recvCorrectCards() {
+        self.cardsToFeed = []
         let cards = loadCorrectLocal()
+        
         if (cardsToFeed.count > 0) {
-            for card in cards {
+            let noDuplicatesArray = cards.filter { element in
+                return !cardsToFeed.contains(where: {$0.local == element.local})
+            }
+
+            for card in noDuplicatesArray {
                 cardsToFeed.append(card)
             }
         } else {
             self.cardsToFeed = cards
         }
+        
+        let allCards = ReadJson.instance.loadjson().filter { element in
+            return !cardsToFeed.contains(where: {$0.local == element.local})
+        }
+        remainingUnkownCards = allCards
+        
+        
+
     }
+    
 
     func loadCorrectLocal() -> [LocalElement] {
         do {
