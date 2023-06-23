@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FeedView: View {
+    let gameCenterView = GameCenterViewController()
     @StateObject var viewmodel = FeedViewModel()
     var body: some View {
         NavigationStack{
@@ -23,6 +24,8 @@ struct FeedView: View {
                     }
                 }
             }
+        }.onAppear{
+            gameCenterView.authenticateUser()
         }
     }
 }
