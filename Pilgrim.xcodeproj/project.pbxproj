@@ -12,6 +12,14 @@
 		2977A2062A3CA24D001BCC34 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2052A3CA24D001BCC34 /* InitialView.swift */; };
 		2977A2082A3CA2D2001BCC34 /* FeedComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */; };
 		2977A20A2A3CA850001BCC34 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2092A3CA850001BCC34 /* FeedViewModel.swift */; };
+		4F020EA72A45D756005303DB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F020EA62A45D756005303DB /* WidgetKit.framework */; };
+		4F020EA92A45D756005303DB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F020EA82A45D756005303DB /* SwiftUI.framework */; };
+		4F020EAC2A45D756005303DB /* Pilgrim_iOS_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F020EAB2A45D756005303DB /* Pilgrim_iOS_WidgetBundle.swift */; };
+		4F020EB02A45D756005303DB /* Pilgrim_iOS_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F020EAF2A45D756005303DB /* Pilgrim_iOS_Widget.swift */; };
+		4F020EB32A45D757005303DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F020EB22A45D757005303DB /* Assets.xcassets */; };
+		4F020EB52A45D757005303DB /* Pilgrim_iOS_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4F020EB12A45D756005303DB /* Pilgrim_iOS_Widget.intentdefinition */; };
+		4F020EB62A45D757005303DB /* Pilgrim_iOS_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4F020EB12A45D756005303DB /* Pilgrim_iOS_Widget.intentdefinition */; };
+		4F020EB92A45D757005303DB /* Pilgrim iOS WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4F020EA42A45D756005303DB /* Pilgrim iOS WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4F4602AB2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
 		4F4602AC2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
 		4F4602AD2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
@@ -58,6 +66,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4F020EB72A45D757005303DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F7D15D52A39F67D002739CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F020EA32A45D756005303DB;
+			remoteInfo = "Pilgrim iOS WidgetExtension";
+		};
 		4F7D15EE2A39F67E002739CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4F7D15D52A39F67D002739CB /* Project object */;
@@ -96,6 +111,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4F020EBA2A45D757005303DB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4F020EB92A45D757005303DB /* Pilgrim iOS WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F7D162C2A39F67F002739CB /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +141,14 @@
 		2977A2052A3CA24D001BCC34 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedComponentView.swift; sourceTree = "<group>"; };
 		2977A2092A3CA850001BCC34 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		4F020EA42A45D756005303DB /* Pilgrim iOS WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pilgrim iOS WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F020EA62A45D756005303DB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4F020EA82A45D756005303DB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4F020EAB2A45D756005303DB /* Pilgrim_iOS_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilgrim_iOS_WidgetBundle.swift; sourceTree = "<group>"; };
+		4F020EAF2A45D756005303DB /* Pilgrim_iOS_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilgrim_iOS_Widget.swift; sourceTree = "<group>"; };
+		4F020EB12A45D756005303DB /* Pilgrim_iOS_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Pilgrim_iOS_Widget.intentdefinition; sourceTree = "<group>"; };
+		4F020EB22A45D757005303DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F020EB42A45D757005303DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feedBackPositivo.mp3; sourceTree = "<group>"; };
 		4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feedBackNegativo.mp3; sourceTree = "<group>"; };
 		4F4602B72A40A21800AB3C95 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
@@ -150,6 +184,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4F020EA12A45D756005303DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F020EA92A45D756005303DB /* SwiftUI.framework in Frameworks */,
+				4F020EA72A45D756005303DB /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F7D15DA2A39F67D002739CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +249,27 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
+		4F020EA52A45D756005303DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F020EA62A45D756005303DB /* WidgetKit.framework */,
+				4F020EA82A45D756005303DB /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F020EAA2A45D756005303DB /* Pilgrim iOS Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4F020EAB2A45D756005303DB /* Pilgrim_iOS_WidgetBundle.swift */,
+				4F020EAF2A45D756005303DB /* Pilgrim_iOS_Widget.swift */,
+				4F020EB12A45D756005303DB /* Pilgrim_iOS_Widget.intentdefinition */,
+				4F020EB22A45D757005303DB /* Assets.xcassets */,
+				4F020EB42A45D757005303DB /* Info.plist */,
+			);
+			path = "Pilgrim iOS Widget";
+			sourceTree = "<group>";
+		};
 		4F4602A82A40A1EC00AB3C95 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +288,8 @@
 				4F7D16072A39F67E002739CB /* Pilgrim Watch App */,
 				4F7D16182A39F67F002739CB /* Pilgrim Watch AppTests */,
 				4F7D16222A39F67F002739CB /* Pilgrim Watch AppUITests */,
+				4F020EAA2A45D756005303DB /* Pilgrim iOS Widget */,
+				4F020EA52A45D756005303DB /* Frameworks */,
 				4F7D15DE2A39F67D002739CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -237,6 +303,7 @@
 				4F7D16032A39F67E002739CB /* Pilgrim Watch App.app */,
 				4F7D16152A39F67F002739CB /* Pilgrim Watch AppTests.xctest */,
 				4F7D161F2A39F67F002739CB /* Pilgrim Watch AppUITests.xctest */,
+				4F020EA42A45D756005303DB /* Pilgrim iOS WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -362,6 +429,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4F020EA32A45D756005303DB /* Pilgrim iOS WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F020EBD2A45D757005303DB /* Build configuration list for PBXNativeTarget "Pilgrim iOS WidgetExtension" */;
+			buildPhases = (
+				4F020EA02A45D756005303DB /* Sources */,
+				4F020EA12A45D756005303DB /* Frameworks */,
+				4F020EA22A45D756005303DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pilgrim iOS WidgetExtension";
+			productName = "Pilgrim iOS WidgetExtension";
+			productReference = 4F020EA42A45D756005303DB /* Pilgrim iOS WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4F7D15DC2A39F67D002739CB /* Pilgrim */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F7D162D2A39F67F002739CB /* Build configuration list for PBXNativeTarget "Pilgrim" */;
@@ -370,11 +454,13 @@
 				4F7D15DA2A39F67D002739CB /* Frameworks */,
 				4F7D15DB2A39F67D002739CB /* Resources */,
 				4F7D162C2A39F67F002739CB /* Embed Watch Content */,
+				4F020EBA2A45D757005303DB /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4F7D16062A39F67E002739CB /* PBXTargetDependency */,
+				4F020EB82A45D757005303DB /* PBXTargetDependency */,
 			);
 			name = Pilgrim;
 			packageProductDependencies = (
@@ -483,6 +569,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					4F020EA32A45D756005303DB = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					4F7D15DC2A39F67D002739CB = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -529,11 +618,20 @@
 				4F7D16022A39F67E002739CB /* Pilgrim Watch App */,
 				4F7D16142A39F67F002739CB /* Pilgrim Watch AppTests */,
 				4F7D161E2A39F67F002739CB /* Pilgrim Watch AppUITests */,
+				4F020EA32A45D756005303DB /* Pilgrim iOS WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4F020EA22A45D756005303DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F020EB32A45D757005303DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F7D15DB2A39F67D002739CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,6 +694,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4F020EA02A45D756005303DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F020EB02A45D756005303DB /* Pilgrim_iOS_Widget.swift in Sources */,
+				4F020EB52A45D757005303DB /* Pilgrim_iOS_Widget.intentdefinition in Sources */,
+				4F020EAC2A45D756005303DB /* Pilgrim_iOS_WidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F7D15D92A39F67D002739CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -614,6 +722,7 @@
 				4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */,
 				29371D8A2A40A3F20062FF38 /* FeedDetailsView.swift in Sources */,
 				4FD951E62A41E0F800EC2C80 /* HapticsManager.swift in Sources */,
+				4F020EB62A45D757005303DB /* Pilgrim_iOS_Widget.intentdefinition in Sources */,
 				4F4602B82A40A21800AB3C95 /* SoundManager.swift in Sources */,
 				B9EF5B762A4323AC0081272F /* JSONWrite.swift in Sources */,
 			);
@@ -670,6 +779,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4F020EB82A45D757005303DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F020EA32A45D756005303DB /* Pilgrim iOS WidgetExtension */;
+			targetProxy = 4F020EB72A45D757005303DB /* PBXContainerItemProxy */;
+		};
 		4F7D15EF2A39F67E002739CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4F7D15DC2A39F67D002739CB /* Pilgrim */;
@@ -698,6 +812,65 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4F020EBB2A45D757005303DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pilgrim iOS Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pilgrim iOS Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prog.Pilgrim.Pilgrim-iOS-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F020EBC2A45D757005303DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPSYB39C6H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pilgrim iOS Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pilgrim iOS Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "prog.Pilgrim.Pilgrim-iOS-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		4F7D16272A39F67F002739CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1108,6 +1281,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4F020EBD2A45D757005303DB /* Build configuration list for PBXNativeTarget "Pilgrim iOS WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F020EBB2A45D757005303DB /* Debug */,
+				4F020EBC2A45D757005303DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4F7D15D82A39F67D002739CB /* Build configuration list for PBXProject "Pilgrim" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
