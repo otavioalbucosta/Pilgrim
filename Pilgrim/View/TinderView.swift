@@ -41,7 +41,7 @@ struct TinderView: View {
             .padding(.top, 120)
             ForEach(viewmodel.cardsQueue.reversed(), id: \.self) { element in
                 CardView(
-                    localName: element.local ?? "Não Encontrado",
+                    localName: element.local,
                     localEstado: element.state.rawValue,
                     url: URL(string: element.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg")
                 ) {
@@ -52,16 +52,24 @@ struct TinderView: View {
             }.padding(.top, 120)
 
             VStack {
+                Spacer()
+                HStack {
+                    Text("Score: \(viewmodel.score)")
+                        .font(.system(size: 25, weight: .medium, design: .default))
+                        .padding(.bottom, 20)
+                }
+            }
+
+            VStack {
 
                 // MARK: Vidas
                 if !viewmodel.isGameOver {
-                    HStack {
+                    HStack(spacing: 15) {
                         ForEach(0...viewmodel.numberOfLifesRemains-1, id: \.self) { life in
-                            Circle()
-                                .fill(.linearGradient(.init(colors: [.red, .pink]), startPoint: .top, endPoint: .bottom))
-                                .frame(width: 50)
+                            Image("seloCoracao")
+                                .resizable()
+                                .frame(width: 50, height: 50)
                                 .padding(.top, 50)
-
                         }
                         Spacer()
                     }
@@ -97,24 +105,23 @@ struct TinderView: View {
                                     }
 
                                     VStack(alignment: .leading, spacing: 15) {
-                                        Text("Total de acertos na partida: 10")
+                                        Text("Total de acertos na partida: \(viewmodel.score)")
                                             .colorInvert()
-                                        Text("Acertos consecutivos: 4")
-                                            .colorInvert()
-                                        // ESSE RETANGULO É A LINHA, REVER ESSE CÓDIGO!
+                                        // MARK: ESSE RETANGULO É A LINHA, REVER ESSE CÓDIGO!
                                         Rectangle()
-                                            .fill(.black)
+                                            .fill(.secondary)
                                             .frame(width: 280, height: 2)
-                                        Text("Pontuação: 14")
-                                            .colorInvert()
-                                        Text("Melhor pontuação: 16")
+                                        Text("Melhor pontuação: \(viewmodel.highScore)")
                                             .colorInvert()
                                     }
                                     .padding(.leading, 10)
 
                                     Button("Jogar Novamente") {
-                                        print("JOGAR NOVAMENTE")
+                                        withAnimation {
+                                            viewmodel.resetGame()
+                                        }
                                     }
+                                    .buttonStyle(.borderedProminent)
                                     Spacer()
                                 }
                                 .padding(.top, 29)

@@ -12,24 +12,39 @@ struct FeedView: View {
     var body: some View {
         NavigationStack{
             ScrollView {
-                VStack{
-                    if viewmodel.cardsToFeed.isEmpty{
-                        Spacer()
-                        Text("Você não possui cartas acertadas ainda :( ")
-                        Text("Jogue mais o Jogo para desbloquear cartas acertadas")
-                            .multilineTextAlignment(.center)
-                        Spacer()
-                    }
-                    ForEach(viewmodel.cardsToFeed, id: \.self) { element in
-                        NavigationLink {
-                            FeedDetailsView(local: element)
-                        } label: {
-                            FeedComponentView(local: element)
+                
+                VStack(alignment: .leading){
+                    Text("The Pilgrims")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding(EdgeInsets(top: 20, leading: 20, bottom: 10, trailing: 0))
+                    Text("Locais Descobertos")
+                        .font(.title3)
+                        .padding(EdgeInsets(top: 10, leading: 20, bottom: 20, trailing: 0))
+//                    VStack{
+                    LazyVGrid(columns: [GridItem(), GridItem()], spacing: 10){
+                        ForEach((viewmodel.cardsToFeed), id: \.self) {  element in
+                            NavigationLink {
+                                FeedDetailsView(local: element)
+                            } label: {
+                                FeedComponentView(isBlocked: false, local: element)
+                            }
+                            .buttonStyle(.plain)
                         }
-                        .buttonStyle(.plain)
+                        ForEach(viewmodel.remainingUnkownCards, id: \.self) { element in
+                            NavigationLink {
+                                FeedDetailsView(local: element)
+                            } label: {
+                                FeedComponentView(isBlocked: true, local: element)
+                            }
+                            .buttonStyle(.plain)
+                        }
                     }
                 }
             }
+        }
+        .onAppear {
+            viewmodel.recvCorrectCards()
         }
     }
 }

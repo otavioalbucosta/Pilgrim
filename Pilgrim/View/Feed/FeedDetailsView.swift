@@ -35,13 +35,6 @@ struct FeedDetailsView: View {
     var body: some View {
 
         ZStack {
-            KFImage(URL(string: local.imageURL!))
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 350,height: 600)
-                                .cornerRadius(25)
-                                .rotation3DEffect(.degrees(frontRotationDegree), axis: (0,1,0), perspective: 0.7)
-                                
             ZStack{
                 KFImage(URL(string: local.imageURL!))
                     .resizable()
@@ -52,7 +45,7 @@ struct FeedDetailsView: View {
                     .opacity(0.1)
                 
                 VStack(alignment: .leading){
-                    Text(local.local!)
+                    Text(local.local)
                         .font(.title)
                         .multilineTextAlignment(.leading)
                         .padding()
@@ -67,7 +60,13 @@ struct FeedDetailsView: View {
 
             }
             .frame(width: 350,height: 600)
-            .rotation3DEffect(.degrees(backRotationDegree), axis: (0,1,0), perspective: 0.7)
+            .rotation3DEffect(.degrees(frontRotationDegree), axis: (0,1,0), perspective: 0.7)
+            KFImage(URL(string: local.imageURL!))
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 350,height: 600)
+                                .cornerRadius(25)
+                                .rotation3DEffect(.degrees(backRotationDegree), axis: (0,1,0), perspective: 0.7)
             
                                 
         }
