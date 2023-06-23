@@ -8,7 +8,8 @@
 import Foundation
 
 class TinderViewmodel: ObservableObject {
-
+    
+    let gameCenterViewController = GameCenterViewController()
     @Published var cardsQueue: [LocalElement] = []
     @Published var locals: [LocalElement] = []
     @Published var localIndex = 0
@@ -131,6 +132,7 @@ class TinderViewmodel: ObservableObject {
         if currentScore > highScore {
             UserDefaults.standard.set(currentScore, forKey: "highScore")
             highScore = score
+            gameCenterViewController.saveGameCenterLeaderboard(record: highScore)
         }
     }
 }
