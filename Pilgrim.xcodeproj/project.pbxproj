@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29371D8A2A40A3F20062FF38 /* FeedDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29371D892A40A3F20062FF38 /* FeedDetailsView.swift */; };
+		29371D8E2A4333190062FF38 /* WCSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29371D8D2A4333190062FF38 /* WCSessionManager.swift */; };
 		2977A2042A3CA1D7001BCC34 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2032A3CA1D7001BCC34 /* FeedView.swift */; };
 		2977A2062A3CA24D001BCC34 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2052A3CA24D001BCC34 /* InitialView.swift */; };
 		2977A2082A3CA2D2001BCC34 /* FeedComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */; };
@@ -49,11 +50,16 @@
 		4FD951E62A41E0F800EC2C80 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD951E52A41E0F800EC2C80 /* HapticsManager.swift */; };
 		4FDF258C2A3B308F00933466 /* AllStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF258B2A3B308F00933466 /* AllStates.swift */; };
 		B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905B38D2A3A04B70043311E /* TinderViewmodel.swift */; };
+		B95733D62A45BD0D001BB4EF /* FeedWatchViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95733D52A45BD0D001BB4EF /* FeedWatchViewmodel.swift */; };
+		B95733DA2A45BDA7001BB4EF /* WCSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29371D8D2A4333190062FF38 /* WCSessionManager.swift */; };
+		B95733DB2A45BDB3001BB4EF /* LocalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D163E2A39FD5E002739CB /* LocalModel.swift */; };
+		B95733DD2A45C773001BB4EF /* FeedWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95733DC2A45C773001BB4EF /* FeedWatchView.swift */; };
 		B98FD35A2A3B4C9D00AED766 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD3592A3B4C9D00AED766 /* CardView.swift */; };
 		B98FD35D2A3B4CAF00AED766 /* SemiCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD35B2A3B4CAF00AED766 /* SemiCircle.swift */; };
 		B98FD35E2A3B4CAF00AED766 /* TinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD35C2A3B4CAF00AED766 /* TinderView.swift */; };
 		B98FD3602A3B4CBC00AED766 /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */; };
 		B98FD3632A3B5C9E00AED766 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B98FD3622A3B5C9E00AED766 /* Kingfisher */; };
+		B9E08AF82A45DF0300630F60 /* JSONWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF5B752A4323AC0081272F /* JSONWrite.swift */; };
 		B9EF5B762A4323AC0081272F /* JSONWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF5B752A4323AC0081272F /* JSONWrite.swift */; };
 		B9F590B62A44E22400749CED /* GameCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F590B52A44E22400749CED /* GameCenterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -112,6 +118,7 @@
 
 /* Begin PBXFileReference section */
 		29371D892A40A3F20062FF38 /* FeedDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsView.swift; sourceTree = "<group>"; };
+		29371D8D2A4333190062FF38 /* WCSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSessionManager.swift; sourceTree = "<group>"; };
 		2977A2032A3CA1D7001BCC34 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		2977A2052A3CA24D001BCC34 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedComponentView.swift; sourceTree = "<group>"; };
@@ -143,6 +150,8 @@
 		4FD951E52A41E0F800EC2C80 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		4FDF258B2A3B308F00933466 /* AllStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStates.swift; sourceTree = "<group>"; };
 		B905B38D2A3A04B70043311E /* TinderViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewmodel.swift; sourceTree = "<group>"; };
+		B95733D52A45BD0D001BB4EF /* FeedWatchViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedWatchViewmodel.swift; sourceTree = "<group>"; };
+		B95733DC2A45C773001BB4EF /* FeedWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedWatchView.swift; sourceTree = "<group>"; };
 		B98FD3592A3B4C9D00AED766 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B98FD35B2A3B4CAF00AED766 /* SemiCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiCircle.swift; sourceTree = "<group>"; };
 		B98FD35C2A3B4CAF00AED766 /* TinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderView.swift; sourceTree = "<group>"; };
@@ -296,6 +305,8 @@
 		4F7D16072A39F67E002739CB /* Pilgrim Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				B95733D72A45BD19001BB4EF /* View */,
+				B95733D42A45BCF3001BB4EF /* Viewmodel */,
 				4F7D16082A39F67E002739CB /* PilgrimApp.swift */,
 				4F7D160A2A39F67E002739CB /* ContentView.swift */,
 				4F7D160C2A39F67F002739CB /* Assets.xcassets */,
@@ -364,9 +375,26 @@
 				B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */,
 				4F4602B72A40A21800AB3C95 /* SoundManager.swift */,
 				4FD951E52A41E0F800EC2C80 /* HapticsManager.swift */,
+				29371D8D2A4333190062FF38 /* WCSessionManager.swift */,
 				B9EF5B752A4323AC0081272F /* JSONWrite.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		B95733D42A45BCF3001BB4EF /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B95733D52A45BD0D001BB4EF /* FeedWatchViewmodel.swift */,
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		B95733D72A45BD19001BB4EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B95733DC2A45C773001BB4EF /* FeedWatchView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B9EF5B772A433AE70081272F /* Feed */ = {
@@ -638,6 +666,7 @@
 				B98FD35A2A3B4C9D00AED766 /* CardView.swift in Sources */,
 				4FDF258C2A3B308F00933466 /* AllStates.swift in Sources */,
 				4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */,
+				29371D8E2A4333190062FF38 /* WCSessionManager.swift in Sources */,
 				B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */,
 				B9F590B62A44E22400749CED /* GameCenterViewController.swift in Sources */,
 				4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */,
@@ -673,7 +702,12 @@
 			files = (
 				4F7D160B2A39F67E002739CB /* ContentView.swift in Sources */,
 				4F7D16092A39F67E002739CB /* PilgrimApp.swift in Sources */,
+				B95733DB2A45BDB3001BB4EF /* LocalModel.swift in Sources */,
+				B95733D62A45BD0D001BB4EF /* FeedWatchViewmodel.swift in Sources */,
 				4F4602BB2A40A21800AB3C95 /* SoundManager.swift in Sources */,
+				B95733DA2A45BDA7001BB4EF /* WCSessionManager.swift in Sources */,
+				B95733DD2A45C773001BB4EF /* FeedWatchView.swift in Sources */,
+				B9E08AF82A45DF0300630F60 /* JSONWrite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
