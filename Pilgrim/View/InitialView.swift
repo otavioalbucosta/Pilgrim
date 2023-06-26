@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct InitialView: View {
-    @State var selection: Int = 1
+    @State var selection: Int = 2
     var body: some View {
         TabView(selection: $selection) {
             FeedView()
