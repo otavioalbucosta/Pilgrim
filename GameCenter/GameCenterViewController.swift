@@ -43,6 +43,29 @@ class GameCenterViewController: UIViewController {
             print("User not sign into Game Center")
         }
     }
+
+    func getHighScoreFromLeadboard() ->Void {
+        // Check if the user is authenticated
+        if (GKLocalPlayer.local.isAuthenticated) {
+            // Load the leaderboards that will be accessed
+            GKLeaderboard.loadLeaderboards(
+                IDs: ["Viajantes1"]          // Leaderboards'id  that will be accessed
+            ) { leaderboards, _ in          // completionHandler 01: .loadLeaderboards
+
+                // Access the first leaderboard
+                leaderboards?[0].loadEntries(
+                    for: [GKLocalPlayer.local], // User who will be accessed within the leaderboard, in this case the local user
+                    timeScope: .allTime)        // Choose which period of the leaderboard you will access (all time, weekly, daily...)
+                { player, _, _ in           // completionHandler 02: .loadEntries
+
+                    print(player?.score ?? "SEM SCORE", player?.player.displayName ?? "SEM NOME")
+
+                }
+            }
+        }
+    }
+
+
 }
 
 
