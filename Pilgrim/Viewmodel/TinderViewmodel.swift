@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WidgetKit
 
 class TinderViewmodel: ObservableObject {
     
@@ -35,7 +36,7 @@ class TinderViewmodel: ObservableObject {
     init() {
         getShuffleData()
         let correctData = UserDefaults.standard.data(forKey: "correctLocal")
-        let highScoreInteger = UserDefaults.standard.integer(forKey: "highScore")
+        let highScoreInteger = UserDefaults(suiteName: "group.highScoreUserDefault")?.integer(forKey: "highScore")
         let decoder = JSONDecoder()
         if correctData != nil {
             do {
@@ -45,7 +46,7 @@ class TinderViewmodel: ObservableObject {
                 print(error)
             }
         }
-        highScore = highScoreInteger
+        highScore = highScoreInteger ?? 0
     }
 
     func getShuffleData() {
@@ -130,9 +131,10 @@ class TinderViewmodel: ObservableObject {
 
     private func compareHighScore(_ currentScore: Int) {
         if currentScore > highScore {
-            UserDefaults.standard.set(currentScore, forKey: "highScore")
+            UserDefaults(suiteName: "group.highScoreUserDefault")?.set(currentScore, forKey: "highScore")
             highScore = score
             gameCenterViewController.saveGameCenterLeaderboard(record: highScore)
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
 }
