@@ -21,14 +21,15 @@ struct Provider: IntentTimelineProvider {
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
-        let gameCenterController = GameCenterViewController()
 
-        let leaderboardData = gameCenterController.getHighScoreFromLeadboard()
+        let highScoreInteger = UserDefaults(suiteName: "group.highScoreUserDefault")?.integer(forKey: "highScore")
+
+        let leaderboardData = ("Sua Pontuação", highScoreInteger ?? 0)
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
+        for hourOffset in 0 ..< 1 {
+            let entryDate = Calendar.current.date(byAdding: .second, value: hourOffset, to: currentDate)!
             let entry = SimpleEntry(date: entryDate, configuration: configuration , leadboardData: leaderboardData)
             entries.append(entry)
         }
@@ -48,7 +49,6 @@ struct PilgrimWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
         Text("\(entry.leadboardData.0), \(entry.leadboardData.1)")
     }
 }
