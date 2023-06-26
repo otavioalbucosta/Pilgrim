@@ -14,6 +14,10 @@
 		2977A2082A3CA2D2001BCC34 /* FeedComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */; };
 		2977A20A2A3CA850001BCC34 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2092A3CA850001BCC34 /* FeedViewModel.swift */; };
 		299D6FC82A49B11A00E06160 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 299D6FCA2A49B11A00E06160 /* Localizable.strings */; };
+		299D6FCC2A49D22E00E06160 /* AllStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF258B2A3B308F00933466 /* AllStates.swift */; };
+		299D6FCE2A49D5AE00E06160 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D6FCD2A49D5AE00E06160 /* OnboardingView.swift */; };
+		299D6FD12A49D69200E06160 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D6FD02A49D69200E06160 /* OnboardingPageView.swift */; };
+		299D6FD42A4A06B900E06160 /* FinalOnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D6FD32A4A06B900E06160 /* FinalOnboardingPageView.swift */; };
 		4F4602AB2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
 		4F4602AC2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
 		4F4602AD2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
@@ -126,6 +130,9 @@
 		2977A2092A3CA850001BCC34 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		299D6FC92A49B11A00E06160 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		299D6FCB2A49B16D00E06160 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		299D6FCD2A49D5AE00E06160 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		299D6FD02A49D69200E06160 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		299D6FD32A4A06B900E06160 /* FinalOnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalOnboardingPageView.swift; sourceTree = "<group>"; };
 		4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feedBackPositivo.mp3; sourceTree = "<group>"; };
 		4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feedBackNegativo.mp3; sourceTree = "<group>"; };
 		4F4602B72A40A21800AB3C95 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
@@ -160,7 +167,6 @@
 		B98FD35C2A3B4CAF00AED766 /* TinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderView.swift; sourceTree = "<group>"; };
 		B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		B9EF5B752A4323AC0081272F /* JSONWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONWrite.swift; sourceTree = "<group>"; };
-		B9EF5B782A433AE70081272F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		B9F590B32A44E1C800749CED /* Pilgrim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pilgrim.entitlements; sourceTree = "<group>"; };
 		B9F590B52A44E22400749CED /* GameCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +228,26 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
+		299D6FCF2A49D67F00E06160 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				299D6FCD2A49D5AE00E06160 /* OnboardingView.swift */,
+				299D6FD32A4A06B900E06160 /* FinalOnboardingPageView.swift */,
+				299D6FD02A49D69200E06160 /* OnboardingPageView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		299D6FD22A49D6A300E06160 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				B98FD35B2A3B4CAF00AED766 /* SemiCircle.swift */,
+				B98FD3592A3B4C9D00AED766 /* CardView.swift */,
+				B98FD35C2A3B4CAF00AED766 /* TinderView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		4F4602A82A40A1EC00AB3C95 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,7 +262,6 @@
 			children = (
 				299D6FCA2A49B11A00E06160 /* Localizable.strings */,
 				B9F590B42A44E1FE00749CED /* GameCenter */,
-				B9EF5B772A433AE70081272F /* Feed */,
 				4F7D15DF2A39F67D002739CB /* Pilgrim */,
 				4F7D15F02A39F67E002739CB /* PilgrimTests */,
 				4F7D15FA2A39F67E002739CB /* PilgrimUITests */,
@@ -270,7 +295,6 @@
 				B905B38A2A3A047B0043311E /* Viewmodel */,
 				B905B3892A3A044F0043311E /* View */,
 				4F7D15E02A39F67D002739CB /* PilgrimApp.swift */,
-				4FDF258B2A3B308F00933466 /* AllStates.swift */,
 				4F7D16442A39FE0B002739CB /* LocalsJSON.json */,
 				4F7D15E42A39F67E002739CB /* Assets.xcassets */,
 				4F7D15E62A39F67E002739CB /* Preview Content */,
@@ -344,10 +368,9 @@
 		B905B3892A3A044F0043311E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				299D6FD22A49D6A300E06160 /* Game */,
+				299D6FCF2A49D67F00E06160 /* Onboarding */,
 				2977A20E2A4095F7001BCC34 /* Feed */,
-				B98FD35B2A3B4CAF00AED766 /* SemiCircle.swift */,
-				B98FD35C2A3B4CAF00AED766 /* TinderView.swift */,
-				B98FD3592A3B4C9D00AED766 /* CardView.swift */,
 				2977A2052A3CA24D001BCC34 /* InitialView.swift */,
 			);
 			path = View;
@@ -366,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				4F7D163E2A39FD5E002739CB /* LocalModel.swift */,
+				4FDF258B2A3B308F00933466 /* AllStates.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -396,15 +420,6 @@
 				B95733DC2A45C773001BB4EF /* FeedWatchView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		B9EF5B772A433AE70081272F /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				B9EF5B782A433AE70081272F /* FeedView.swift */,
-			);
-			name = Feed;
-			path = Pilgrim/View/Feed;
 			sourceTree = "<group>";
 		};
 		B9F590B42A44E1FE00749CED /* GameCenter */ = {
@@ -668,7 +683,10 @@
 				B98FD35A2A3B4C9D00AED766 /* CardView.swift in Sources */,
 				4FDF258C2A3B308F00933466 /* AllStates.swift in Sources */,
 				4F7D15E12A39F67D002739CB /* PilgrimApp.swift in Sources */,
+				299D6FD12A49D69200E06160 /* OnboardingPageView.swift in Sources */,
 				29371D8E2A4333190062FF38 /* WCSessionManager.swift in Sources */,
+				299D6FCE2A49D5AE00E06160 /* OnboardingView.swift in Sources */,
+				299D6FD42A4A06B900E06160 /* FinalOnboardingPageView.swift in Sources */,
 				B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */,
 				B9F590B62A44E22400749CED /* GameCenterViewController.swift in Sources */,
 				4F7D163F2A39FD5E002739CB /* LocalModel.swift in Sources */,
@@ -704,6 +722,7 @@
 			files = (
 				4F7D160B2A39F67E002739CB /* ContentView.swift in Sources */,
 				4F7D16092A39F67E002739CB /* PilgrimApp.swift in Sources */,
+				299D6FCC2A49D22E00E06160 /* AllStates.swift in Sources */,
 				B95733DB2A45BDB3001BB4EF /* LocalModel.swift in Sources */,
 				B95733D62A45BD0D001BB4EF /* FeedWatchViewmodel.swift in Sources */,
 				4F4602BB2A40A21800AB3C95 /* SoundManager.swift in Sources */,
