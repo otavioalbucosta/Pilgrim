@@ -13,6 +13,7 @@
 		2977A2062A3CA24D001BCC34 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2052A3CA24D001BCC34 /* InitialView.swift */; };
 		2977A2082A3CA2D2001BCC34 /* FeedComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */; };
 		2977A20A2A3CA850001BCC34 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A2092A3CA850001BCC34 /* FeedViewModel.swift */; };
+		299D6FC82A49B11A00E06160 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 299D6FCA2A49B11A00E06160 /* Localizable.strings */; };
 		4F4602AB2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
 		4F4602AC2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
 		4F4602AD2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */; };
@@ -123,6 +124,8 @@
 		2977A2052A3CA24D001BCC34 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		2977A2072A3CA2D2001BCC34 /* FeedComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedComponentView.swift; sourceTree = "<group>"; };
 		2977A2092A3CA850001BCC34 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		299D6FC92A49B11A00E06160 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		299D6FCB2A49B16D00E06160 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4F4602A92A40A1FC00AB3C95 /* feedBackPositivo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feedBackPositivo.mp3; sourceTree = "<group>"; };
 		4F4602AA2A40A1FC00AB3C95 /* feedBackNegativo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feedBackNegativo.mp3; sourceTree = "<group>"; };
 		4F4602B72A40A21800AB3C95 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
@@ -231,6 +234,7 @@
 		4F7D15D42A39F67D002739CB = {
 			isa = PBXGroup;
 			children = (
+				299D6FCA2A49B11A00E06160 /* Localizable.strings */,
 				B9F590B42A44E1FE00749CED /* GameCenter */,
 				B9EF5B772A433AE70081272F /* Feed */,
 				4F7D15DF2A39F67D002739CB /* Pilgrim */,
@@ -566,6 +570,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 4F7D15D42A39F67D002739CB;
 			packageReferences = (
@@ -591,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F4602AB2A40A1FD00AB3C95 /* feedBackPositivo.mp3 in Resources */,
+				299D6FC82A49B11A00E06160 /* Localizable.strings in Resources */,
 				4F7D16452A39FED5002739CB /* LocalsJSON.json in Resources */,
 				4F7D15E82A39F67E002739CB /* Preview Assets.xcassets in Resources */,
 				4F7D15E52A39F67E002739CB /* Assets.xcassets in Resources */,
@@ -756,11 +762,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		299D6FCA2A49B11A00E06160 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				299D6FC92A49B11A00E06160 /* en */,
+				299D6FCB2A49B16D00E06160 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		4F7D16272A39F67F002739CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -819,6 +838,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -875,18 +895,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 2DU8KC3W93;
+				DEVELOPMENT_TEAM = 8YQ35HP37L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = prog.Pilgrim;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.otavioalbuquerque.Pilgrim;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = prog.Pilgrim.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otavioalbuquerque.Pilgrim.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -907,18 +927,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 2DU8KC3W93;
+				DEVELOPMENT_TEAM = 8YQ35HP37L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = prog.Pilgrim;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.otavioalbuquerque.Pilgrim;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = prog.Pilgrim.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otavioalbuquerque.Pilgrim.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -942,7 +962,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
-				DEVELOPMENT_TEAM = 2DU8KC3W93;
+				DEVELOPMENT_TEAM = 8YQ35HP37L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -956,7 +976,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = prog.Pilgrim;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otavioalbuquerque.Pilgrim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -977,7 +997,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
-				DEVELOPMENT_TEAM = 2DU8KC3W93;
+				DEVELOPMENT_TEAM = 8YQ35HP37L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -991,7 +1011,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = prog.Pilgrim;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otavioalbuquerque.Pilgrim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;

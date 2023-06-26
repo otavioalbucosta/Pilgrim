@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Pilgrim
+
+  Created by Otávio Albuquerque on 26/06/23.
+  
+*/
+"Locais Descobertos" = "Locais Descobertos";
+"Você viu todos os cards" = "Você viu todos os cards";
+"Você perdeu!" = "Você perdeu!";
+"Total de acertos na partida: %@" = "Total de acertos na partida: %@";
+"Melhor pontuação: %@" = "Melhor pontuação: %@";
+"Jogar Novamente" = "Jogar Novamente";

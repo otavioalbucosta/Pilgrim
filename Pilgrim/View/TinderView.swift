@@ -93,27 +93,48 @@ struct TinderView: View {
                             .ignoresSafeArea()
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 300, height: 450)
+                            .foregroundColor(Color(red: 179/255, green: 190/255, blue: 217/255))
                             .overlay {
                                 VStack(spacing: 15) {
 
                                     HStack {
                                         Spacer()
                                         Text("Você perdeu!")
-                                            .colorInvert()
+                                            .tint(Color(red: 27/255, green: 42/255, blue: 108/255))
                                             .font(.system(size: 20, weight: .bold))
                                         Spacer()
                                     }
-
-                                    VStack(alignment: .leading, spacing: 15) {
-                                        Text("Total de acertos na partida: \(viewmodel.score)")
-                                            .colorInvert()
-                                        // MARK: ESSE RETANGULO É A LINHA, REVER ESSE CÓDIGO!
-                                        Rectangle()
-                                            .fill(.secondary)
-                                            .frame(width: 280, height: 2)
-                                        Text("Melhor pontuação: \(viewmodel.highScore)")
-                                            .colorInvert()
+                                    HStack {
+                                        Spacer()
+                                        Text("Você ainda não conquistou \n todos os pontos turisticos")
+                                            .tint(Color(red: 27/255, green: 42/255, blue: 108/255))
+                                            .font(.system(size: 20))
+                                        Spacer()
                                     }
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 15)
+                                            .foregroundStyle(
+                                                .white.shadow(.inner(color: .black.opacity(0.3), radius: 3,x: 1, y: 1))
+                                            )
+                                            
+                                        VStack(alignment: .leading, spacing: 15) {
+                                            Text(String(localized: "Total de acertos na partida: \(viewmodel.score)"))
+                                                .tint(Color(red: 27/255, green: 42/255, blue: 108/255))
+                                                .fontWeight(.semibold)
+                                                
+                                            // MARK: ESSE RETANGULO É A LINHA, REVER ESSE CÓDIGO!
+                
+                                            Text(String(localized: "Melhor pontuação: \(viewmodel.highScore)"))
+                                                .tint(Color(red: 27/255, green: 42/255, blue: 108/255))
+                                                .fontWeight(.semibold)
+                                                
+                                        }
+                                    }
+                                    .frame(width: 280, height: 100)
+                                    .offset(x: -5)
+
+                                    
+
                                     .padding(.leading, 10)
 
                                     Button("Jogar Novamente") {
@@ -122,6 +143,9 @@ struct TinderView: View {
                                         }
                                     }
                                     .buttonStyle(.borderedProminent)
+                                    .tint(Color(red: 81/255, green: 104/255, blue: 160/255))
+                                    .fontWeight(.bold)
+                                    
                                     Spacer()
                                 }
                                 .padding(.top, 29)
