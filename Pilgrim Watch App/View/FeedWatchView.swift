@@ -11,11 +11,16 @@ struct FeedWatchView: View {
     @ObservedObject var wcSessionManager = WCSessionManager.shared
 
     var body: some View {
-        Text("teste")
-        Button {
-            print(wcSessionManager.cards)
-        } label: {
-            Text("Atualizar cards")
+        if wcSessionManager.cards.isEmpty {
+            Text("Nenhum card foi desbloqueado")
+        } else {
+            ScrollView {
+                LazyVGrid(columns: [GridItem()]) {
+                    ForEach(wcSessionManager.cards, id: \.self) { card in
+                        FeedComponentWatch(card: card)
+                    }
+                }
+            }
         }
     }
 }

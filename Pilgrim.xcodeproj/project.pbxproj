@@ -50,7 +50,6 @@
 		4FD951E62A41E0F800EC2C80 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD951E52A41E0F800EC2C80 /* HapticsManager.swift */; };
 		4FDF258C2A3B308F00933466 /* AllStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF258B2A3B308F00933466 /* AllStates.swift */; };
 		B905B38E2A3A04B70043311E /* TinderViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905B38D2A3A04B70043311E /* TinderViewmodel.swift */; };
-		B95733D62A45BD0D001BB4EF /* FeedWatchViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95733D52A45BD0D001BB4EF /* FeedWatchViewmodel.swift */; };
 		B95733DA2A45BDA7001BB4EF /* WCSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29371D8D2A4333190062FF38 /* WCSessionManager.swift */; };
 		B95733DB2A45BDB3001BB4EF /* LocalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D163E2A39FD5E002739CB /* LocalModel.swift */; };
 		B95733DD2A45C773001BB4EF /* FeedWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95733DC2A45C773001BB4EF /* FeedWatchView.swift */; };
@@ -59,6 +58,8 @@
 		B98FD35E2A3B4CAF00AED766 /* TinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD35C2A3B4CAF00AED766 /* TinderView.swift */; };
 		B98FD3602A3B4CBC00AED766 /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */; };
 		B98FD3632A3B5C9E00AED766 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B98FD3622A3B5C9E00AED766 /* Kingfisher */; };
+		B9A8FD052A49C5910035CD11 /* FeedComponentWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A8FD042A49C5910035CD11 /* FeedComponentWatch.swift */; };
+		B9A8FD082A49C6D10035CD11 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B9A8FD072A49C6D10035CD11 /* Kingfisher */; };
 		B9E08AF82A45DF0300630F60 /* JSONWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF5B752A4323AC0081272F /* JSONWrite.swift */; };
 		B9EF5B762A4323AC0081272F /* JSONWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF5B752A4323AC0081272F /* JSONWrite.swift */; };
 		B9F590B62A44E22400749CED /* GameCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F590B52A44E22400749CED /* GameCenterViewController.swift */; };
@@ -150,17 +151,16 @@
 		4FD951E52A41E0F800EC2C80 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		4FDF258B2A3B308F00933466 /* AllStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStates.swift; sourceTree = "<group>"; };
 		B905B38D2A3A04B70043311E /* TinderViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewmodel.swift; sourceTree = "<group>"; };
-		B95733D52A45BD0D001BB4EF /* FeedWatchViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedWatchViewmodel.swift; sourceTree = "<group>"; };
 		B95733DC2A45C773001BB4EF /* FeedWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedWatchView.swift; sourceTree = "<group>"; };
 		B98FD3592A3B4C9D00AED766 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B98FD35B2A3B4CAF00AED766 /* SemiCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiCircle.swift; sourceTree = "<group>"; };
 		B98FD35C2A3B4CAF00AED766 /* TinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderView.swift; sourceTree = "<group>"; };
 		B98FD35F2A3B4CBC00AED766 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
+		B9A8FD042A49C5910035CD11 /* FeedComponentWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedComponentWatch.swift; sourceTree = "<group>"; };
 		B9EF5B752A4323AC0081272F /* JSONWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONWrite.swift; sourceTree = "<group>"; };
 		B9EF5B782A433AE70081272F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		B9F590B32A44E1C800749CED /* Pilgrim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pilgrim.entitlements; sourceTree = "<group>"; };
 		B9F590B52A44E22400749CED /* GameCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterViewController.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A8FD082A49C6D10035CD11 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,10 +233,8 @@
 		4F7D15D42A39F67D002739CB = {
 			isa = PBXGroup;
 			children = (
-
 				B9F590B42A44E1FE00749CED /* GameCenter */,
 				B9EF5B772A433AE70081272F /* Feed */,
-
 				4F7D15DF2A39F67D002739CB /* Pilgrim */,
 				4F7D15F02A39F67E002739CB /* PilgrimTests */,
 				4F7D15FA2A39F67E002739CB /* PilgrimUITests */,
@@ -243,6 +242,7 @@
 				4F7D16182A39F67F002739CB /* Pilgrim Watch AppTests */,
 				4F7D16222A39F67F002739CB /* Pilgrim Watch AppUITests */,
 				4F7D15DE2A39F67D002739CB /* Products */,
+				B9A8FD062A49C6D10035CD11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -306,7 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				B95733D72A45BD19001BB4EF /* View */,
-				B95733D42A45BCF3001BB4EF /* Viewmodel */,
 				4F7D16082A39F67E002739CB /* PilgrimApp.swift */,
 				4F7D160A2A39F67E002739CB /* ContentView.swift */,
 				4F7D160C2A39F67F002739CB /* Assets.xcassets */,
@@ -381,20 +380,20 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
-		B95733D42A45BCF3001BB4EF /* Viewmodel */ = {
-			isa = PBXGroup;
-			children = (
-				B95733D52A45BD0D001BB4EF /* FeedWatchViewmodel.swift */,
-			);
-			path = Viewmodel;
-			sourceTree = "<group>";
-		};
 		B95733D72A45BD19001BB4EF /* View */ = {
 			isa = PBXGroup;
 			children = (
 				B95733DC2A45C773001BB4EF /* FeedWatchView.swift */,
+				B9A8FD042A49C5910035CD11 /* FeedComponentWatch.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B9A8FD062A49C6D10035CD11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B9EF5B772A433AE70081272F /* Feed */ = {
@@ -414,7 +413,6 @@
 			path = GameCenter;
 			sourceTree = "<group>";
 		};
-
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -489,6 +487,9 @@
 			dependencies = (
 			);
 			name = "Pilgrim Watch App";
+			packageProductDependencies = (
+				B9A8FD072A49C6D10035CD11 /* Kingfisher */,
+			);
 			productName = "Pilgrim Watch App";
 			productReference = 4F7D16032A39F67E002739CB /* Pilgrim Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -702,8 +703,8 @@
 			files = (
 				4F7D160B2A39F67E002739CB /* ContentView.swift in Sources */,
 				4F7D16092A39F67E002739CB /* PilgrimApp.swift in Sources */,
+				B9A8FD052A49C5910035CD11 /* FeedComponentWatch.swift in Sources */,
 				B95733DB2A45BDB3001BB4EF /* LocalModel.swift in Sources */,
-				B95733D62A45BD0D001BB4EF /* FeedWatchViewmodel.swift in Sources */,
 				4F4602BB2A40A21800AB3C95 /* SoundManager.swift in Sources */,
 				B95733DA2A45BDA7001BB4EF /* WCSessionManager.swift in Sources */,
 				B95733DD2A45C773001BB4EF /* FeedWatchView.swift in Sources */,
@@ -879,7 +880,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 2DU8KC3W93;
+				DEVELOPMENT_TEAM = 949BRFMFQG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -911,7 +912,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 2DU8KC3W93;
+				DEVELOPMENT_TEAM = 949BRFMFQG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -945,7 +946,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
-				DEVELOPMENT_TEAM = 2DU8KC3W93;
+				DEVELOPMENT_TEAM = 949BRFMFQG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -978,7 +979,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
-				DEVELOPMENT_TEAM = 2DU8KC3W93;
+				DEVELOPMENT_TEAM = 949BRFMFQG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pilgrim;
@@ -1251,6 +1252,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		B98FD3622A3B5C9E00AED766 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B98FD3612A3B5C9E00AED766 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		B9A8FD072A49C6D10035CD11 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B98FD3612A3B5C9E00AED766 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;

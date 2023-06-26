@@ -21,7 +21,6 @@ class FeedViewModel: ObservableObject {
         let cards = loadCorrectLocal()
         
         if (cardsToFeed.count > 0) {
-
             for card in cardsToFeed {
                 cardsToFeed.append(card)
             }
@@ -33,9 +32,7 @@ class FeedViewModel: ObservableObject {
             return !cardsToFeed.contains(where: {$0.local == element.local})
         }
         remainingUnkownCards = allCards
-        
-        
-
+        WCSessionManager.shared.updateWatchData(cards: cards)
     }
     
 
