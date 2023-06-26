@@ -14,9 +14,9 @@ struct OnboardingView: View {
             ZStack {
                 Color(red: 179/255, green: 190/255, blue: 217/255).ignoresSafeArea()
                 TabView {
-                    OnboardingPageView(image: "Pilgrim", title: "Bem Vindo!", description: "LOREM IPSUM DOLOR SIT AMET ASKDJNASLJDN")
-                    OnboardingPageView(image: "Pilgrim", title: "Bem Vindo!", description: "LOREM IPSUM DOLOR SIT AMET ASKDJNASLJDN")
-                    FinalOnboardingPageView(image: "Pilgrim", title: "Bem Vindo!", description: "LOREM IPSUM DOLOR SIT AMET ASKDJNASLJDN", finalPage: $showsOnboarding)
+                    OnboardingPageView(image: "Pilgrim", title: "bem vindo", description: "intro")
+                    OnboardingPageView(image: "GameOnboarding", title: "jogo", description: "jogodesc")
+                    FinalOnboardingPageView(image: "FeedOnboarding", title: "feed", description: "feeddesc", finalPage: $showsOnboarding)
                 }
                 .tabViewStyle(.page)
                 .indexViewStyle(.page(backgroundDisplayMode: .always))

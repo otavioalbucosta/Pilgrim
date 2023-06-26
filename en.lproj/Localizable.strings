@@ -6,4 +6,11 @@
 "Total de acertos na partida: %d" = "Your Score: %d";
 "Melhor pontuação: %d" = "Personal Best: %d";
 "Jogar Novamente" = "Play Again";
+"bem vindo" = "Welcome!";
+"intro" = "Let's show you how Pilgrim works!";
+"jogo" = "The game";
+"jogodesc" = "Our game is quite simple! It consists on guessing if a card of a touristic attractions is located on a given State. To answer, drag the card to the left or right! ";
+"feed" = "Your feed";
+"feeddesc" = "The cards you answer correctly goes to your feed! There, you can see which cards you guessed precisety, read and discover more about that touristic attraction and Region!";
+
 

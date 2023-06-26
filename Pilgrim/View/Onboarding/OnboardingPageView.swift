@@ -19,13 +19,13 @@ struct OnboardingPageView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 200)
             
-            Text(title)
+            Text(String(localized: String.LocalizationValue(title)))
                 .font(.system(size: 35,weight: .heavy, design: .rounded))
                 .padding(.bottom,12)
             
-            Text(description)
+            Text(String(localized: String.LocalizationValue(description)))
                 .font(.system(size: 18, weight: .light, design: .rounded))
-                .padding(.bottom, 30)
+                .padding([.bottom, .leading, .trailing], 30)
             
             
         }
@@ -36,6 +36,6 @@ struct OnboardingPageView: View {
 
 struct OnboardingPageView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingPageView(image: "Pilgrim", title: "Bem Vindo!", description: "LOREM IPSUM DOLOR SIT AMET ASKDJNASLJDN")
+        OnboardingPageView(image: "Pilgrim", title: "Bem Vindo!", description: "LOREM IPSUM DOLOR SIT AMET ASKDJNASLJDN LOREM IPSUM DOLOR SIT AMET ASKDJNASLJDN LOREM IPSUM DOLOR SIT AMET ASKDJNASLJDN")
     }
 }
