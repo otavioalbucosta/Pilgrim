@@ -100,14 +100,14 @@ struct TinderView: View {
                                     HStack {
                                         Spacer()
                                         Text("Você perdeu!")
-                                            .tint(Color(red: 27/255, green: 42/255, blue: 108/255))
+                                            .foregroundColor(Color(red: 27/255, green: 42/255, blue: 108/255))
                                             .font(.system(size: 20, weight: .bold))
                                         Spacer()
                                     }
                                     HStack {
                                         Spacer()
-                                        Text("Você ainda não conquistou \n todos os pontos turisticos")
-                                            .tint(Color(red: 27/255, green: 42/255, blue: 108/255))
+                                        Text("Você ainda não conquistou todos os pontos turisticos")
+                                            .foregroundColor(Color(red: 27/255, green: 42/255, blue: 108/255))
                                             .font(.system(size: 20))
                                         Spacer()
                                     }
@@ -118,14 +118,14 @@ struct TinderView: View {
                                             )
                                             
                                         VStack(alignment: .leading, spacing: 15) {
-                                            Text(String(localized: "Total de acertos na partida: \(viewmodel.score)"))
-                                                .tint(Color(red: 27/255, green: 42/255, blue: 108/255))
+                                            Text("Total de acertos na partida: \(viewmodel.score, specifier: "%d")")
+                                                .foregroundColor(Color(red: 27/255, green: 42/255, blue: 108/255))
                                                 .fontWeight(.semibold)
                                                 
                                             // MARK: ESSE RETANGULO É A LINHA, REVER ESSE CÓDIGO!
                 
-                                            Text(String(localized: "Melhor pontuação: \(viewmodel.highScore)"))
-                                                .tint(Color(red: 27/255, green: 42/255, blue: 108/255))
+                                            Text("Melhor pontuação: \(viewmodel.highScore, specifier: "%d")")
+                                                .foregroundColor(Color(red: 27/255, green: 42/255, blue: 108/255))
                                                 .fontWeight(.semibold)
                                                 
                                         }

@@ -8,27 +8,35 @@
 import SwiftUI
 
 struct InitialView: View {
+    @State var showsOnboarding: Bool = true
     @State var selection: Int = 2
     var body: some View {
-        TabView(selection: $selection) {
-            FeedView()
-                .tabItem {
-                    Label {
-                        Text("Feed")
-                    } icon: {
-                        Image(systemName: "house.fill")
+        
+        if showsOnboarding {
+            OnboardingView(showsOnboarding: $showsOnboarding)
+        }else {
+            TabView(selection: $selection) {
+                FeedView()
+                    .tabItem {
+                        Label {
+                            Text("Feed")
+                        } icon: {
+                            Image(systemName: "house.fill")
+                        }
                     }
-                }
-            TinderView()
-                .tabItem {
-                    Label {
-                        Text("Game")
-                    } icon: {
-                        Image(systemName: "gamecontroller.fill")
-                    }
+                TinderView()
+                    .tabItem {
+                        Label {
+                            Text("Game")
+                        } icon: {
+                            Image(systemName: "gamecontroller.fill")
+                        }
 
-                }
+                    }
+            }
+
         }
+            
 
     }
 }
