@@ -32,7 +32,7 @@ class GameCenterViewController: UIViewController {
     func saveGameCenterLeaderboard (record: Int) {
         let local = GKLocalPlayer.local
         if GKLocalPlayer.local.isAuthenticated {
-            GKLeaderboard.submitScore(record, context: 0, player: local, leaderboardIDs: ["Viajante1"], completionHandler: { error in
+            GKLeaderboard.submitScore(record, context: 0, player: local, leaderboardIDs: ["Viajantes1"], completionHandler: { error in
                 if error != nil {
                     print(error!)
                 } else {
