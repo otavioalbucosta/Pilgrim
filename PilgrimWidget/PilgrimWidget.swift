@@ -24,7 +24,7 @@ struct Provider: IntentTimelineProvider {
 
         let highScoreInteger = UserDefaults(suiteName: "group.highScoreUserDefault")?.integer(forKey: "highScore")
 
-        let leaderboardData = ("Sua Pontuação", highScoreInteger ?? 0)
+        let leaderboardData = ("Seu Record", highScoreInteger ?? 0)
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
@@ -49,7 +49,7 @@ struct PilgrimWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text("\(entry.leadboardData.0), \(entry.leadboardData.1)")
+        Text("\(entry.leadboardData.0): \(entry.leadboardData.1)")
     }
 }
 
