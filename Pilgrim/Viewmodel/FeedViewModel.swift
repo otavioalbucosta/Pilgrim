@@ -33,9 +33,6 @@ class FeedViewModel: ObservableObject {
             return !cardsToFeed.contains(where: {$0.local == element.local})
         }
         remainingUnkownCards = allCards
-        
-        
-
     }
     
 
