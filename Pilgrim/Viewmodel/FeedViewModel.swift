@@ -17,14 +17,12 @@ class FeedViewModel: ObservableObject {
     
     func recvCorrectCards() {
         self.cardsToFeed = []
+        self.remainingUnkownCards = []
         let cards = loadCorrectLocal()
         
         if (cardsToFeed.count > 0) {
-            let noDuplicatesArray = cards.filter { element in
-                return !cardsToFeed.contains(where: {$0.local == element.local})
-            }
 
-            for card in noDuplicatesArray {
+            for card in cardsToFeed {
                 cardsToFeed.append(card)
             }
         } else {

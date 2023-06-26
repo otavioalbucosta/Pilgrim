@@ -60,7 +60,7 @@ class TinderViewmodel: ObservableObject {
         }
         locals = (wrongCards + correctCards).shuffled()
         cardsQueue = Array(locals.suffix(3))
-        localIndex = locals.count - 3
+        localIndex = locals.count - 4
         currentLocal = locals.first!
     }
 

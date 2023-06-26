@@ -22,11 +22,8 @@ struct FeedComponentView: View {
                 KFImage(URL(string:local.imageURL!))
                     .resizable()
                     .frame(width: 155,height: 155)
-                    .cornerRadius(25)
                     .blur(radius: 3)
-                    .foregroundColor(.black)
-                    .opacity(0.5)
-
+                    .cornerRadius(25)
                 Image(systemName: "lock.fill")
                     .font(.title)
             }
@@ -36,6 +33,7 @@ struct FeedComponentView: View {
                     .resizable()
                     .frame(width: 155,height: 155)
                     .cornerRadius(25)
+
             }
         }
 

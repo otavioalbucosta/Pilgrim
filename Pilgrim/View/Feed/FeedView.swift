@@ -10,36 +10,40 @@ import SwiftUI
 struct FeedView: View {
     let gameCenterView = GameCenterViewController()
     @StateObject var viewmodel = FeedViewModel()
+    @State var searchText = ""
+    
+    @State var feedCards = [LocalElement]()
+    
+    
+    
     var body: some View {
         NavigationStack{
             ScrollView {
                 
                 VStack(alignment: .leading){
-                    Text("The Pilgrims")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .padding(EdgeInsets(top: 20, leading: 20, bottom: 10, trailing: 0))
-                    Text("Locais Descobertos")
-                        .font(.title3)
-                        .padding(EdgeInsets(top: 10, leading: 20, bottom: 20, trailing: 0))
+
 //                    VStack{
-                    LazyVGrid(columns: [GridItem(), GridItem()], spacing: 10){
-                        ForEach((viewmodel.cardsToFeed), id: \.self) {  element in
-                            NavigationLink {
-                                FeedDetailsView(local: element)
-                            } label: {
-                                FeedComponentView(isBlocked: false, local: element)
-                            }
-                            .buttonStyle(.plain)
-                        }
-                        ForEach(viewmodel.remainingUnkownCards, id: \.self) { element in
-                            NavigationLink {
-                                FeedDetailsView(local: element)
-                            } label: {
+                    LazyVGrid(columns: [GridItem(), GridItem()], spacing: 30){
+                        ForEach((feedCards), id: \.self) {  element in
+                            if viewmodel.cardsToFeed.contains(element) {
+                                NavigationLink {
+                                    FeedDetailsView(local: element)
+                                } label: {
+                                    FeedComponentView(isBlocked: false, local: element)
+                                }
+                                .buttonStyle(.plain)
+                            }else{
                                 FeedComponentView(isBlocked: true, local: element)
                             }
-                            .buttonStyle(.plain)
+
                         }
+                    }
+                    .navigationTitle("Locais Descobertos")
+                    .navigationBarTitleDisplayMode(.large)
+                    .listStyle(.plain)
+                    .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+                    .onChange(of: searchText) { newValue in
+                        search()
                     }
                 }
             }
@@ -48,6 +52,19 @@ struct FeedView: View {
         }
         .onAppear {
             viewmodel.recvCorrectCards()
+            feedCards = viewmodel.cardsToFeed + viewmodel.remainingUnkownCards
+        }
+    }
+    
+    func search() {
+        if searchText.isEmpty {
+            feedCards = viewmodel.cardsToFeed + viewmodel.remainingUnkownCards
+            
+            
+        }else {
+            feedCards = feedCards.filter({ element in
+                return element.local.localizedCaseInsensitiveContains(searchText)
+            })
         }
     }
 }
