@@ -160,7 +160,6 @@
 		B9EF5B782A433AE70081272F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		B9F590B32A44E1C800749CED /* Pilgrim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pilgrim.entitlements; sourceTree = "<group>"; };
 		B9F590B52A44E22400749CED /* GameCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterViewController.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,10 +231,8 @@
 		4F7D15D42A39F67D002739CB = {
 			isa = PBXGroup;
 			children = (
-
 				B9F590B42A44E1FE00749CED /* GameCenter */,
 				B9EF5B772A433AE70081272F /* Feed */,
-
 				4F7D15DF2A39F67D002739CB /* Pilgrim */,
 				4F7D15F02A39F67E002739CB /* PilgrimTests */,
 				4F7D15FA2A39F67E002739CB /* PilgrimUITests */,
@@ -414,7 +411,6 @@
 			path = GameCenter;
 			sourceTree = "<group>";
 		};
-
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -942,6 +938,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Pilgrim/Pilgrim.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
@@ -961,6 +958,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prog.Pilgrim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -975,6 +973,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Pilgrim/Pilgrim.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pilgrim/Preview Content\"";
@@ -994,6 +993,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prog.Pilgrim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1093,7 +1093,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8YQ35HP37L;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "prog.Pilgrim-Watch-AppTests";
@@ -1114,7 +1114,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8YQ35HP37L;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "prog.Pilgrim-Watch-AppTests";
@@ -1135,7 +1135,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8YQ35HP37L;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "prog.Pilgrim-Watch-AppUITests";
@@ -1155,7 +1155,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8YQ35HP37L;
+				DEVELOPMENT_TEAM = 2DU8KC3W93;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "prog.Pilgrim-Watch-AppUITests";
