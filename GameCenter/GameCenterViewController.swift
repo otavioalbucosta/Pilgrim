@@ -29,6 +29,7 @@ class GameCenterViewController: UIViewController {
             }
         }
     }
+    
     func saveGameCenterLeaderboard (record: Int) {
         let local = GKLocalPlayer.local
         if GKLocalPlayer.local.isAuthenticated {
@@ -44,8 +45,11 @@ class GameCenterViewController: UIViewController {
         }
     }
 
-    func getHighScoreFromLeadboard() ->Void {
+    func getHighScoreFromLeadboard() -> (String, Int) {
         // Check if the user is authenticated
+        var playerOutput: String = ""
+        var scoreOutput: Int = 0
+
         if (GKLocalPlayer.local.isAuthenticated) {
             // Load the leaderboards that will be accessed
             GKLeaderboard.loadLeaderboards(
@@ -57,17 +61,14 @@ class GameCenterViewController: UIViewController {
                     for: [GKLocalPlayer.local], // User who will be accessed within the leaderboard, in this case the local user
                     timeScope: .allTime)        // Choose which period of the leaderboard you will access (all time, weekly, daily...)
                 { player, _, _ in           // completionHandler 02: .loadEntries
-
-                    print(player?.score ?? "SEM SCORE", player?.player.displayName ?? "SEM NOME")
-
+                    playerOutput = player?.player.displayName ?? "NAO REGISTRADO"
+                    scoreOutput = player?.score ?? 0
                 }
             }
         }
+        return (playerOutput, scoreOutput)
     }
-
-
 }
-
 
 /*
  // MARK: - Navigation
