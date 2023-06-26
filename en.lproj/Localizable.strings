@@ -1,8 +1,9 @@
 
 "Locais Descobertos" = "Discovered Places";
 "Você viu todos os cards" = "You have found all cards";
+"Você ainda não conquistou todos os pontos turisticos" = "You still haven't conquered all the attractions";
 "Você perdeu!" = "Game over!";
-"Total de acertos na partida: %@" = "Your Score: %@";
-"Melhor pontuação: %@" = "Personal Best: %@";
+"Total de acertos na partida: %d" = "Your Score: %d";
+"Melhor pontuação: %d" = "Personal Best: %d";
 "Jogar Novamente" = "Play Again";
 
