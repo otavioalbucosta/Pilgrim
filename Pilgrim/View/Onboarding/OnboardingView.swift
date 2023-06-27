@@ -21,9 +21,6 @@ struct OnboardingView: View {
                 .tabViewStyle(.page)
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
             }
-        
-        
-
     }
 }
 
