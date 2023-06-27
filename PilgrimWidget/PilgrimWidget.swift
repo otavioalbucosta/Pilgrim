@@ -24,7 +24,7 @@ struct Provider: IntentTimelineProvider {
 
         let highScoreInteger = UserDefaults(suiteName: "group.highScoreUserDefault")?.integer(forKey: "highScore")
 
-        let leaderboardData = ("Seu Record", highScoreInteger ?? 0)
+        let leaderboardData = ("Sua Pontuação", highScoreInteger ?? 0)
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
@@ -49,7 +49,28 @@ struct PilgrimWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text("\(entry.leadboardData.0): \(entry.leadboardData.1)")
+        GeometryReader { geo in
+            VStack {
+                Spacer()
+                Text("\(entry.leadboardData.0): \(entry.leadboardData.1)")
+                    .font(.system(size: 15, weight: .medium, design: .rounded))
+                    .foregroundColor(Color("textColor"))
+                    .background {
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(.shadow(.inner(color: .gray, radius: 2, x: 0, y: 2)))
+                            .frame(width: geo.size.width * 0.90, height: geo.size.height * 0.20)
+
+                    }
+                    .padding(.top, 25)
+
+                Image("trophy")
+                    .resizable()
+                    .frame(width: geo.size.width * 0.5, height: geo.size.height * 0.5)
+                    Spacer()
+            }
+            .frame(width: geo.size.width, height: geo.size.height)
+            .background(Color("WidgetBackground"))
+        }
     }
 }
 
