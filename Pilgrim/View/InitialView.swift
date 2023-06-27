@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct InitialView: View {
-    @State var showsOnboarding: Bool = true
+    @AppStorage("showsOnboarding") var showsOnboarding: Bool = true
     @State var selection: Int = 2
     var body: some View {
         
