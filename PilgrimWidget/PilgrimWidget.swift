@@ -82,7 +82,8 @@ struct PilgrimWidget: Widget {
             PilgrimWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Pilgrim Widget")
-        .description("Thats the PilgrimApp Widget")
+        .description("Display your HighScore")
+        .supportedFamilies([.systemSmall])
     }
 }
 
