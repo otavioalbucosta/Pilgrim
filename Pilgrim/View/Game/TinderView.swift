@@ -169,7 +169,7 @@ struct TinderView: View {
         .background {
             KFImage(URL(string: viewmodel.cardsQueue.first?.imageURL ?? "https://images.hdqwalls.com/download/kerry-park-seattle-united-states-5k-gu-1080x1920.jpg"))
                 .resizable()
-                .scaledToFill()
+                .aspectRatio(contentMode: .fill)
                 .overlay {
                     Rectangle().fill(.ultraThinMaterial)
                 }

@@ -26,9 +26,9 @@ struct CardView: View {
                     ZStack {
                         KFImage(source: .network(url!))
                             .resizable()
-                            .cornerRadius(25)
                             .frame(width: 280, height: 440)
-                            .scaledToFit()
+                            .cornerRadius(25)
+                            .aspectRatio(contentMode: .fill)
                             .shadow(radius: 2)
                         VStack {
                             HStack {
@@ -101,6 +101,6 @@ struct CardView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(localName: "Imagem", localEstado: "CE")
+        CardView(localName: "Imagem", localEstado: "CE", url: URL(string: ""))
     }
 }

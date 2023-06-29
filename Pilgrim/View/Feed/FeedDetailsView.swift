@@ -38,8 +38,8 @@ struct FeedDetailsView: View {
             ZStack{
                 KFImage(URL(string: local.imageURL!))
                     .resizable()
-                    .scaledToFill()
                     .frame(width: 350,height: 500)
+                    .aspectRatio(contentMode: .fill)
                     .background(.black)
                     .cornerRadius(25)
                     .opacity(0.1)
@@ -66,8 +66,8 @@ struct FeedDetailsView: View {
             .rotation3DEffect(.degrees(frontRotationDegree), axis: (0,1,0), perspective: 0.7)
             KFImage(URL(string: local.imageURL!))
                                 .resizable()
-                                .scaledToFill()
                                 .frame(width: 350,height: 500)
+                                .aspectRatio(contentMode: .fill)
                                 .cornerRadius(25)
                                 .rotation3DEffect(.degrees(backRotationDegree), axis: (0,1,0), perspective: 0.7)
             

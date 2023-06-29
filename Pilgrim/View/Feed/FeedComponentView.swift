@@ -24,6 +24,7 @@ struct FeedComponentView: View {
                     .frame(width: 155,height: 155)
                     .blur(radius: 3)
                     .cornerRadius(25)
+                    .aspectRatio(contentMode: .fill)
                 Image(systemName: "lock.fill")
                     .font(.title)
             }
@@ -33,6 +34,7 @@ struct FeedComponentView: View {
                     .resizable()
                     .frame(width: 155,height: 155)
                     .cornerRadius(25)
+                    .aspectRatio(contentMode: .fill)
 
             }
         }
