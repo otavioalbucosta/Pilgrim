@@ -13,24 +13,27 @@ struct OnboardingPageView: View {
     var description: String
     var body: some View {
         
-        VStack {
-            Image(image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 200)
-            
-            Text(String(localized: String.LocalizationValue(title)))
-                .font(.system(size: 35,weight: .heavy, design: .rounded))
-                .padding(.bottom,12)
-            
-            Text(String(localized: String.LocalizationValue(description)))
-                .font(.system(size: 18, weight: .light, design: .rounded))
-                .padding([.bottom, .leading, .trailing], 30)
-            
-            
+        GeometryReader { geo in
+                VStack(alignment: .center) {
+                    Image(image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: geo.size.width * 0.45)
+
+                    Text(String(localized: String.LocalizationValue(title)))
+                        .font(.system(size: geo.size.width * 0.08,weight: .heavy, design: .rounded))
+                        .padding(.bottom,12)
+
+                    Text(String(localized: String.LocalizationValue(description)))
+                        .font(.system(size: geo.size.width * 0.04, weight: .light, design: .rounded))
+                        .padding([.bottom, .leading, .trailing], 30)
+                }
+                .frame(width: geo.size.width, height: geo.size.height)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color(red: 27/255, green: 42/255, blue: 108/255))
+                .background(.blue)
         }
-        .multilineTextAlignment(.center)
-        .foregroundColor(Color(red: 27/255, green: 42/255, blue: 108/255))
+        .background(.red)
     }
 }
 
