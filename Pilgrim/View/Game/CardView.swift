@@ -15,19 +15,20 @@ struct CardView: View {
     var localName: String
     var localEstado: String
     var url: URL?
+    var frame: CGSize
     var correctChoice: () -> Void = {}
     var wrongChoice: () -> Void = {}
 
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25)
-                .frame(width: 280, height: 400)
+                .frame(width: frame.width, height: frame.height)
                 .overlay(
                     ZStack {
                         KFImage(source: .network(url!))
                             .resizable()
                             .cornerRadius(25)
-                            .frame(width: 280, height: 440)
+                            .frame(width: frame.width, height: frame.height)
                             .scaledToFit()
                             .shadow(radius: 2)
                         VStack {
@@ -101,6 +102,6 @@ struct CardView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(localName: "Imagem", localEstado: "CE")
+        CardView(localName: "Imagem", localEstado: "CE", frame: CGSize(width: 250, height: 400))
     }
 }
