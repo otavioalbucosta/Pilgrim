@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Pilgrim
+
+  Created by Otávio Albuquerque on 26/06/23.
+  
+*/
+"Locais Descobertos" = "Locais Descobertos";
+"Você viu todos os cards" = "Você viu todos os cards";
+"Você perdeu!" = "Você perdeu!";
+"Total de acertos na partida: %@" = "Total de acertos na partida: %@";
+"Melhor pontuação: %@" = "Melhor pontuação: %@";
+"Jogar Novamente" = "Jogar Novamente";
+"bem vindo" = "Bem Vindo!";
+"intro" = "Vamos te mostrar como o Pilgrim funciona!";
+"jogo" = "O Jogo";
+"jogodesc" = "Nosso jogo é muito simples! Ele consiste em adivinhar se um dado card de ponto turístico faz parte do Estado mostrado acima ou não, e para responder, basta arrastar o card para a esquerda ou para a direita! ";
+"feed" = "Nosso Feed";
+"feeddesc" = "As cartas que você acertar vão para o seu feed! Lá, você pode ver as cartas que você já acertou, ler e descobrir mais sobre o ponto turístico e a região!";
+
