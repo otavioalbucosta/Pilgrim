@@ -31,9 +31,9 @@ struct OnboardingPageView: View {
                 .frame(width: geo.size.width, height: geo.size.height)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color(red: 27/255, green: 42/255, blue: 108/255))
-                .background(.blue)
+//                .background(.blue)
         }
-        .background(.red)
+//        .background(.red)
     }
 }
 
